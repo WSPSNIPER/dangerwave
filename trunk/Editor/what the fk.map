@@ -1,0 +1,641 @@
+H 32 W 32
+
+Layer 0 Tile 0 X 0 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 1 X 0 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 2 X 0 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 3 X 0 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 4 X 0 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 5 X 0 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 6 X 0 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 7 X 0 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 8 X 0 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 9 X 0 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 0 Tile 0 X 32 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 1 X 32 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 2 X 32 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 3 X 32 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 4 X 32 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 5 X 32 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 6 X 32 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 7 X 32 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 8 X 32 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 9 X 32 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 0 Tile 0 X 64 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 1 X 64 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 2 X 64 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 3 X 64 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 4 X 64 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 5 X 64 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 6 X 64 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 7 X 64 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 8 X 64 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 9 X 64 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 0 Tile 0 X 96 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 1 X 96 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 2 X 96 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 3 X 96 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 4 X 96 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 5 X 96 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 6 X 96 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 7 X 96 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 8 X 96 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 9 X 96 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 0 Tile 0 X 128 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 1 X 128 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 2 X 128 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 3 X 128 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 4 X 128 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 5 X 128 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 6 X 128 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 7 X 128 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 8 X 128 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 9 X 128 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 0 Tile 0 X 160 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 1 X 160 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 2 X 160 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 3 X 160 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 4 X 160 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 5 X 160 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 6 X 160 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 7 X 160 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 8 X 160 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 9 X 160 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 0 Tile 0 X 192 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 1 X 192 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 2 X 192 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 3 X 192 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 4 X 192 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 5 X 192 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 6 X 192 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 7 X 192 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 8 X 192 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 9 X 192 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 0 Tile 0 X 224 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 1 X 224 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 2 X 224 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 3 X 224 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 4 X 224 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 5 X 224 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 6 X 224 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 7 X 224 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 8 X 224 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 9 X 224 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 0 Tile 0 X 256 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 1 X 256 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 2 X 256 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 3 X 256 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 4 X 256 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 5 X 256 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 6 X 256 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 7 X 256 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 8 X 256 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 9 X 256 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 0 Tile 0 X 288 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 1 X 288 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 2 X 288 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 3 X 288 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 4 X 288 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 5 X 288 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 6 X 288 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 7 X 288 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 8 X 288 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 0 Tile 9 X 288 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+
+ 
+ 
+Layer 1 Tile 0 X 0 Y 0 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 1 X 0 Y 32 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 2 X 0 Y 64 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 3 X 0 Y 96 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 4 X 0 Y 128 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 5 X 0 Y 160 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 6 X 0 Y 192 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 7 X 0 Y 224 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 8 X 0 Y 256 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 9 X 0 Y 288 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 1 Tile 0 X 32 Y 0 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 1 X 32 Y 32 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 2 X 32 Y 64 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 3 X 32 Y 96 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 4 X 32 Y 128 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 5 X 32 Y 160 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 6 X 32 Y 192 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 7 X 32 Y 224 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 8 X 32 Y 256 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 9 X 32 Y 288 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 1 Tile 0 X 64 Y 0 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 1 X 64 Y 32 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 2 X 64 Y 64 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 3 X 64 Y 96 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 4 X 64 Y 128 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 5 X 64 Y 160 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 6 X 64 Y 192 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 7 X 64 Y 224 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 8 X 64 Y 256 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 9 X 64 Y 288 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 1 Tile 0 X 96 Y 0 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 1 X 96 Y 32 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 2 X 96 Y 64 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 3 X 96 Y 96 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 4 X 96 Y 128 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 5 X 96 Y 160 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 6 X 96 Y 192 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 7 X 96 Y 224 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 8 X 96 Y 256 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 9 X 96 Y 288 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 1 Tile 0 X 128 Y 0 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 1 X 128 Y 32 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 2 X 128 Y 64 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 3 X 128 Y 96 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 4 X 128 Y 128 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 5 X 128 Y 160 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 6 X 128 Y 192 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 7 X 128 Y 224 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 8 X 128 Y 256 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 9 X 128 Y 288 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 1 Tile 0 X 160 Y 0 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 1 X 160 Y 32 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 2 X 160 Y 64 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 3 X 160 Y 96 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 4 X 160 Y 128 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 5 X 160 Y 160 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 6 X 160 Y 192 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 7 X 160 Y 224 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 8 X 160 Y 256 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 9 X 160 Y 288 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 1 Tile 0 X 192 Y 0 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 1 X 192 Y 32 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 2 X 192 Y 64 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 3 X 192 Y 96 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 4 X 192 Y 128 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 5 X 192 Y 160 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 6 X 192 Y 192 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 7 X 192 Y 224 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 8 X 192 Y 256 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 9 X 192 Y 288 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 1 Tile 0 X 224 Y 0 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 1 X 224 Y 32 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 2 X 224 Y 64 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 3 X 224 Y 96 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 4 X 224 Y 128 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 5 X 224 Y 160 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 6 X 224 Y 192 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 7 X 224 Y 224 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 8 X 224 Y 256 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 9 X 224 Y 288 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 1 Tile 0 X 256 Y 0 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 1 X 256 Y 32 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 2 X 256 Y 64 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 3 X 256 Y 96 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 4 X 256 Y 128 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 5 X 256 Y 160 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 6 X 256 Y 192 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 7 X 256 Y 224 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 8 X 256 Y 256 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 9 X 256 Y 288 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 1 Tile 0 X 288 Y 0 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 1 X 288 Y 32 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 2 X 288 Y 64 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 3 X 288 Y 96 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 4 X 288 Y 128 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 5 X 288 Y 160 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 6 X 288 Y 192 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 7 X 288 Y 224 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 8 X 288 Y 256 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 1 Tile 9 X 288 Y 288 Strip_x 32 Strip_y 0 Hieght 32 Width 32 END 
+
+
+
+ 
+ 
+Layer 2 Tile 0 X 0 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 1 X 0 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 2 X 0 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 3 X 0 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 4 X 0 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 5 X 0 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 6 X 0 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 7 X 0 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 8 X 0 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 9 X 0 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 2 Tile 0 X 32 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 1 X 32 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 2 X 32 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 3 X 32 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 4 X 32 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 5 X 32 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 6 X 32 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 7 X 32 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 8 X 32 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 9 X 32 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 2 Tile 0 X 64 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 1 X 64 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 2 X 64 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 3 X 64 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 4 X 64 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 5 X 64 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 6 X 64 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 7 X 64 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 8 X 64 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 9 X 64 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 2 Tile 0 X 96 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 1 X 96 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 2 X 96 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 3 X 96 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 4 X 96 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 5 X 96 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 6 X 96 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 7 X 96 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 8 X 96 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 9 X 96 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 2 Tile 0 X 128 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 1 X 128 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 2 X 128 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 3 X 128 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 4 X 128 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 5 X 128 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 6 X 128 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 7 X 128 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 8 X 128 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 9 X 128 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 2 Tile 0 X 160 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 1 X 160 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 2 X 160 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 3 X 160 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 4 X 160 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 5 X 160 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 6 X 160 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 7 X 160 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 8 X 160 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 9 X 160 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 2 Tile 0 X 192 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 1 X 192 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 2 X 192 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 3 X 192 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 4 X 192 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 5 X 192 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 6 X 192 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 7 X 192 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 8 X 192 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 9 X 192 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 2 Tile 0 X 224 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 1 X 224 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 2 X 224 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 3 X 224 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 4 X 224 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 5 X 224 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 6 X 224 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 7 X 224 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 8 X 224 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 9 X 224 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 2 Tile 0 X 256 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 1 X 256 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 2 X 256 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 3 X 256 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 4 X 256 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 5 X 256 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 6 X 256 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 7 X 256 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 8 X 256 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 9 X 256 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+Layer 2 Tile 0 X 288 Y 0 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 1 X 288 Y 32 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 2 X 288 Y 64 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 3 X 288 Y 96 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 4 X 288 Y 128 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 5 X 288 Y 160 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 6 X 288 Y 192 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 7 X 288 Y 224 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 8 X 288 Y 256 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+Layer 2 Tile 9 X 288 Y 288 Strip_x 0 Strip_y 0 Hieght 32 Width 32 END 
+
+
+
+ 
+ 
