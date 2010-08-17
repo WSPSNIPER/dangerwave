@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="Animation.cpp" open="0" top="0" tabpos="20">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Animation.h" open="0" top="0" tabpos="19">
+		<Cursor position="1563" topLine="40" />
+	</File>
+	<File name="Bullet.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="405" topLine="0" />
+	</File>
+	<File name="Bullet.hpp" open="1" top="0" tabpos="4">
+		<Cursor position="174" topLine="30" />
+	</File>
+	<File name="BulletManager.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="208" topLine="0" />
+	</File>
+	<File name="BulletManager.hpp" open="1" top="0" tabpos="5">
+		<Cursor position="306" topLine="0" />
+	</File>
+	<File name="Entity.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="1041" topLine="17" />
+	</File>
+	<File name="Entity.h" open="0" top="0" tabpos="4">
+		<Cursor position="1737" topLine="44" />
+	</File>
+	<File name="EntityManager.cpp" open="0" top="0" tabpos="23">
+		<Cursor position="1395" topLine="58" />
+	</File>
+	<File name="EntityManager.h" open="0" top="0" tabpos="24">
+		<Cursor position="792" topLine="8" />
+	</File>
+	<File name="GameManager.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="373" topLine="24" />
+	</File>
+	<File name="GameManager.h" open="0" top="0" tabpos="3">
+		<Cursor position="250" topLine="0" />
+	</File>
+	<File name="ImageManager.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="LuaManager.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="LuaManager.h" open="1" top="0" tabpos="11">
+		<Cursor position="82" topLine="0" />
+	</File>
+	<File name="MyRect.h" open="0" top="0" tabpos="12">
+		<Cursor position="81" topLine="3" />
+	</File>
+	<File name="Player.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="1124" topLine="17" />
+	</File>
+	<File name="Player.h" open="1" top="1" tabpos="13">
+		<Cursor position="172" topLine="3" />
+	</File>
+	<File name="QuadTree.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="1548" topLine="50" />
+	</File>
+	<File name="QuadTree.h" open="0" top="0" tabpos="1">
+		<Cursor position="1398" topLine="68" />
+	</File>
+	<File name="SoundManager.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="State.cpp" open="0" top="0" tabpos="12">
+		<Cursor position="22" topLine="0" />
+	</File>
+	<File name="State.h" open="0" top="0" tabpos="11">
+		<Cursor position="550" topLine="0" />
+	</File>
+	<File name="SwarmState.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="359" topLine="2" />
+	</File>
+	<File name="SwarmState.h" open="1" top="0" tabpos="10">
+		<Cursor position="859" topLine="20" />
+	</File>
+	<File name="TestState.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="541" topLine="44" />
+	</File>
+	<File name="TestState.h" open="0" top="0" tabpos="26">
+		<Cursor position="798" topLine="20" />
+	</File>
+	<File name="UIState.h" open="0" top="0" tabpos="6">
+		<Cursor position="506" topLine="0" />
+	</File>
+	<File name="Weapon.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="38" topLine="0" />
+	</File>
+	<File name="Weapon.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="18" topLine="0" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="338" topLine="0" />
+	</File>
+	<File name="slope.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="2" topLine="0" />
+	</File>
+	<File name="slope.hpp" open="1" top="0" tabpos="8">
+		<Cursor position="292" topLine="8" />
+	</File>
+</CodeBlocks_layout_file>
