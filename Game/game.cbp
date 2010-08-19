@@ -21,7 +21,6 @@
 					<Add option="-lsfml-graphics-s-d" />
 					<Add option="-lsfml-window-s-d" />
 					<Add option="-lsfml-system-s-d" />
-					<Add library="..\lua\liblua.a" />
 				</Linker>
 			</Target>
 			<Target title="Release">

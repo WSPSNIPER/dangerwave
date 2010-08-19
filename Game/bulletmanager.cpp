@@ -4,7 +4,7 @@
 
 void BulletManager::Register(Bullet &bullet, float angle, Slope &slope, sf::Vector2f StartPosition)
 {
-    bullet.Shot;
+    bullet.Shot = false;
     bullet.Angle = angle;
 //    bullet.SetPosition(StartPosition);
     bullet._Slope = slope;
