@@ -3,5 +3,5 @@
 
 --updates the player every loop
 
-player:Move(1, 1)
+player:Move(3, 1)
 
