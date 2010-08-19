@@ -1,9 +1,12 @@
 #ifndef _ENTITY_H_
 #define _ENTITY_H_
 
+#include "LuaManager.h"
+#include <iostream>
 #include "ImageManager.h"
 #include "UIState.h"
 #include "Trig.h"
+#include "MyRect.h"
 /**************************************************************************************************
  * @class Entity is a class that represents a base movable object, it is ment to be overriden
  * and used for polymorphism
@@ -23,34 +26,36 @@ namespace cell
     {
         public:
             Entity();
-            Entity(float x, float y, std::string image_name);
+            Entity(float x, float y, float w, float h, std::string image_name);
             virtual ~Entity();
 
             virtual void Render(sf::RenderWindow& window);
             virtual void Update();
 
-            virtual void OnCollision(){}
+            virtual void OnCollision(){std::cout << "collision " << std::endl;}
             virtual void OnCollision(int type){}// add to the enum if you want more or just make a define or somthing
 
-            virtual float GetX() const;
-            virtual float GetY() const;
+            float GetX() const ;
+            float GetY() const ;
 
-            virtual sf::Vector2f GetPosition() const;
+            MyRect GetRect() const { return _collisionRect; }
 
-            virtual sf::Sprite& GetSprite();
+            const sf::Vector2f GetPosition() const;
+
+            const sf::Sprite& GetSprite();
 
             virtual void SetPosition(float x, float y);
             virtual void Move(float offset_x, float offset_y);
 
-            sf::FloatRect& GetRect() { return _collisionRect; }
+            MyRect& GetRect() { return _collisionRect; }
 
             inline bool Collision(cell::Entity* other)
             {
-                return (other->GetRect().Intersects(_collisionRect));
+                return static_cast<bool>(_collisionRect.intersects(other->GetRect()));
             }
-            inline bool Collision(sf::FloatRect rect)
+            inline bool Collision(MyRect& rect)
             {
-                return (rect.Intersects(_collisionRect));
+                return static_cast<bool>(_collisionRect.intersects(rect));
             }
 
             virtual void SetImage(std::string filename);   // i had to make them all virtual because some entities use animations :)
@@ -63,8 +68,9 @@ namespace cell
             sf::Vector2f    _playerPos,
                             _mousePos;
             sf::Sprite      _sprite;
-            sf::FloatRect   _collisionRect;
+            MyRect   _collisionRect;
     };
 }
 
 #endif
+
