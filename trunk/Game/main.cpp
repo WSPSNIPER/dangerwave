@@ -13,7 +13,7 @@ int main()
 {
     GameManager game(640, 480, 32, "Game");
 
-    game.SetFramerateLimit(30);
+    game.SetFramerateLimit(60);
     game.PushState(TestState::GetInst());
     game.Init();
     while(game.IsOpened())
