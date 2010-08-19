@@ -38,8 +38,6 @@
 					<Add option="-lsfml-graphics-s" />
 					<Add option="-lsfml-window-s" />
 					<Add option="-lsfml-system-s" />
-					<Add option="-lluabind" />
-					<Add library="..\lua\liblua.a" />
 				</Linker>
 			</Target>
 		</Build>
@@ -57,14 +55,14 @@
 			<Add option="-lsfml-graphics-s" />
 			<Add option="-lsfml-window-s" />
 			<Add option="-lsfml-system-s" />
-			<Add option="-libluabind" />
-			<Add option="-libLua" />
-			<Add option="-libCell_Engine" />
 			<Add library="mingw32" />
 			<Add library="user32" />
 			<Add library="gdi32" />
 			<Add library="winmm" />
 			<Add library="dxguid" />
+			<Add library="..\lib\libCell_Engine.a" />
+			<Add library="..\lib\libLua.a" />
+			<Add library="..\lib\libluabind.a" />
 			<Add directory="..\include\SFML-1.6\lib" />
 			<Add directory="..\lib" />
 		</Linker>
