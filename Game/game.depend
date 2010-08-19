@@ -8635,7 +8635,7 @@
 1282176645 c:\users\owner\desktop\dangerwave\game\slope.hpp
 	"Entity.h"
 
-1282176647 source:c:\users\owner\desktop\dangerwave\game\bulletmanager.cpp
+1282182036 source:c:\users\owner\desktop\dangerwave\game\bulletmanager.cpp
 	"bulletmanager.hpp"
 	"bullet.hpp"
 
@@ -8815,4 +8815,15 @@
 
 1282176647 source:c:\users\owner\desktop\dangerwave\game\slope.cpp
 	"slope.hpp"
+
+1282181922 source:c:\users\owner\desktop\dangerwave\game\main.cpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"EntityManager.h"
+	"Player.h"
+	"GameManager.h"
+	"TestState.h"
+	"QuadTree.h"
+	<fstream>
 
