@@ -1,0 +1,366 @@
+# depslib dependency file v1.0
+1281932139 source:c:\users\user\dangerwavegame\bullet.cpp
+	"Entity.h"
+	"SFML/System.hpp"
+	"string"
+	"bullet.hpp"
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Randomizer.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\config.hpp
+	<climits>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\clock.hpp
+	<SFML/Config.hpp>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\lock.hpp
+	<SFML/System/NonCopyable.hpp>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\noncopyable.hpp
+	<SFML/Config.hpp>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\mutex.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Win32/Mutex.hpp>
+	<SFML/System/Unix/Mutex.hpp>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\win32\mutex.hpp
+	<SFML/System/NonCopyable.hpp>
+	<windows.h>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\unix\mutex.hpp
+	<SFML/System/NonCopyable.hpp>
+	<pthread.h>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\randomizer.hpp
+	<SFML/Config.hpp>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\sleep.hpp
+	<SFML/Config.hpp>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\thread.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Win32/Thread.hpp>
+	<SFML/System/Unix/Thread.hpp>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\win32\thread.hpp
+	<SFML/System/NonCopyable.hpp>
+	<windows.h>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\unix\thread.hpp
+	<SFML/System/NonCopyable.hpp>
+	<pthread.h>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\unicode.hpp
+	<SFML/Config.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<stdlib.h>
+	<SFML/System/Unicode.inl>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\unicode.inl
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\vector2.inl
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\vector3.inl
+
+1281932569 c:\users\user\dangerwavegame\bullet.hpp
+	"Entity.h"
+	"slope.hpp"
+	<string>
+
+1281932348 c:\users\user\dangerwavegame\slope.hpp
+	"Entity.h"
+
+1279726915 source:c:\users\user\dangerwavegame\entitymanager.cpp
+	"EntityManager.h"
+	"LuaManager.h"
+
+1282198154 c:\users\user\dangerwavegame\entitymanager.h
+	"Entity.h"
+	<vector>
+
+1279723372 source:c:\users\user\dangerwavegame\gamemanager.cpp
+	"GameManager.h"
+
+1282196546 c:\users\user\dangerwavegame\gamemanager.h
+	"EntityManager.h"
+	"QuadTree.h"
+	"State.h"
+	<string>
+
+1282200274 c:\users\user\dangerwavegame\quadtree.h
+	<SFML/System.hpp>
+	"EntityManager.h"
+	<vector>
+	"MyRect.h"
+
+1282196745 c:\users\user\dangerwavegame\state.h
+	"SFML/Graphics.hpp"
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PostFX.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/String.hpp>
+	<SFML/Graphics/View.hpp>
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window.hpp
+	<SFML/System.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Input.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowListener.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/Window/OpenGL.hpp>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window\context.hpp
+	<SFML/Config.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window\event.hpp
+	<SFML/Config.hpp>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window\input.hpp
+	<SFML/Config.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/WindowListener.hpp>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window\windowlistener.hpp
+	<SFML/Config.hpp>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window\videomode.hpp
+	<SFML/Config.hpp>
+	<cstdlib>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window\window.hpp
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Input.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowListener.hpp>
+	<SFML/Window/WindowSettings.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<queue>
+	<string>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window\windowhandle.hpp
+	<SFML/Config.hpp>
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window\windowsettings.hpp
+
+1275877213 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window\windowstyle.hpp
+
+1275877212 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\window\opengl.hpp
+	<SFML/Config.hpp>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\color.hpp
+	<SFML/Config.hpp>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\font.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\resource.hpp
+	<set>
+	<SFML/System/Resource.inl>
+	<SFML/System/ResourcePtr.inl>
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\resource.inl
+
+1275877211 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\system\resourceptr.inl
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\glyph.hpp
+	<SFML/Config.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\rect.hpp
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\rect.inl
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\image.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\postfx.hpp
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Image.hpp>
+	<istream>
+	<map>
+	<string>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\drawable.hpp
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Matrix3.hpp>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\matrix3.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Vector2.hpp>
+	<math.h>
+	<SFML/Graphics/Matrix3.inl>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\matrix3.inl
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\renderwindow.hpp
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\rendertarget.hpp
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1275877210 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\view.hpp
+	<SFML/Config.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Matrix3.hpp>
+	<SFML/System/Vector2.hpp>
+
+1275877210 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\shape.hpp
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/System/Vector2.hpp>
+	<vector>
+
+1275877210 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\sprite.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1275877210 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\graphics\string.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+
+1282246475 source:c:\users\user\dangerwavegame\player.cpp
+	"Player.h"
+	<iostream>
+
+1282245429 c:\users\user\dangerwavegame\player.h
+	<Entity.h>
+	<Animation.h>
+	<string>
+
+1282200840 source:c:\users\user\dangerwavegame\quadtree.cpp
+	"QuadTree.h"
+	<fstream>
+	<iostream>
+	"Player.h"
+
+1279206171 source:c:\users\user\dangerwavegame\state.cpp
+	"State.h"
+
+1282203575 source:c:\users\user\dangerwavegame\swarmstate.cpp
+	"SwarmState.h"
+	"GameManager.h"
+	"AI.h"
+
+1281932628 c:\users\user\dangerwavegame\swarmstate.h
+	"State.h"
+	"Player.h"
+
+1282246012 source:c:\users\user\dangerwavegame\teststate.cpp
+	"TestState.h"
+
+1282244384 c:\users\user\dangerwavegame\teststate.h
+	"State.h"
+	"GameManager.h"
+	"ImageManager.h"
+	"EntityManager.h"
+	"QuadTree.h"
+	"Player.h"
+	"QuadTree.h"
+	<fstream>
+
+1281933557 source:c:\users\user\dangerwavegame\bulletmanager.cpp
+	"bulletmanager.hpp"
+	"bullet.hpp"
+
+1281932525 c:\users\user\dangerwavegame\bulletmanager.hpp
+	"Bullet.hpp"
+
+1280157447 source:c:\users\user\dangerwavegame\main.cpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"EntityManager.h"
+	"Player.h"
+	"GameManager.h"
+	"TestState.h"
+	"QuadTree.h"
+	<fstream>
+
+1281932348 source:c:\users\user\dangerwavegame\slope.cpp
+	"slope.hpp"
+
+1281933557 source:c:\users\user\dangerwavegame\weapon.cpp
+	"weapon.hpp"
+
+1281933557 c:\users\user\dangerwavegame\weapon.hpp
+	"Entity.h"
+	"ImageManager.h"
+	"LuaManager.h"
+	"SFML/Graphics.hpp"
+	"slope.hpp"
+	<string>
+
+1282232915 c:\users\user\dangerwavegame\ai.h
+	"Entity.h"
+	"Trig.h"
+	"LuaManager.h"
+
+1282234636 source:c:\users\user\dangerwavegame\ai.cpp
+	"AI.h"
+	"Trig.h"
+
