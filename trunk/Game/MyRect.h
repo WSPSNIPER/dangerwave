@@ -28,12 +28,20 @@ struct MyRect
                  _y >= y && _y <= y+h    );
     }
 
-    inline bool intersects(const MyRect& rect)
+    inline bool intersects(MyRect& rect)
     {
-        return( (rect.x > x && rect.x < x+w && rect.y > y && rect.y < y+h)|| // top left
+        /*return( (rect.x > x && rect.x < x+w && rect.y > y && rect.y < y+h)|| // top left
                 (rect.x+rect.w < x+w && rect.x+rect.w > x && rect.y > y && rect.y < y+h)|| // top right
                 (rect.x < x+w && rect.x > x && rect.y+rect.h > y && rect.y + rect.h < y+h)|| // bottom left
-                (rect.x+rect.w < x+w && rect.x+rect.w > x && rect.y+rect.h > y && rect.y + rect.h < y+h)); // bottom right
+                (rect.x+rect.w < x+w && rect.x+rect.w > x && rect.y+rect.h > y && rect.y + rect.h < y+h)); */
+                // bottom right
+        return (
+                    rect.contains(x, y) ||
+                    rect.contains(x+w, y) ||
+                    rect.contains(x, y+h) ||
+                    rect.contains(x+w, y+h)
+                );
+
     }
 };
 

@@ -4,28 +4,12 @@
 #include <SFML/System.hpp>
 #include "EntityManager.h"
 #include <vector>
+#include "MyRect.h"
 
 ///  hope to increase collision decetion speed with this one!!
 
 // need to figure out how im going to do this...
-struct NodeRect
-{
-    int x,  y,  w,  h;
-
-    NodeRect()
-    {
-        x = y = w = h = 0;
-    }
-
-    NodeRect(int setX, int setY, int setW, int setH)
-    :
-    x(setX),
-    y(setY),
-    w(setW),
-    h(setH)
-    {
-    }
-};
+typedef MyRect NodeRect;
 struct Node
 {
     Node* child[4];

@@ -69,6 +69,8 @@
 		<Unit filename="EntityManager.h" />
 		<Unit filename="GameManager.cpp" />
 		<Unit filename="GameManager.h" />
+		<Unit filename="Level.cpp" />
+		<Unit filename="Level.h" />
 		<Unit filename="Player.cpp" />
 		<Unit filename="Player.h" />
 		<Unit filename="QuadTree.cpp" />

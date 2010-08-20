@@ -19,8 +19,8 @@ t(2)
 {
 
     _entityManager->Add(new Player(100, 100, "player.png"));
-    _entityManager->Add(new cell::Entity(110, 110, "player.png"));
-    _entityManager->Add(new cell::Entity(300, 100, "player.png"));
+    _entityManager->Add(new cell::Entity(110, 110, 80, 120, "player.png"));
+    _entityManager->Add(new cell::Entity(300, 100, 80, 120, "player.png"));
     //ExportPlayer(&_player); // export the player to lua
 }
 

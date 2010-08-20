@@ -5,7 +5,7 @@ using namespace cell;
 
 Player::Player(float setX, float setY, std::string setName)
 :
-cell::Entity(setX, setY, setName),
+cell::Entity(setX, setY, 80, 120/4, setName),
 _animation(_sprite, 80, 120/4, 4, VERTICAL)
 {
     _animation.AddAnimation("move");

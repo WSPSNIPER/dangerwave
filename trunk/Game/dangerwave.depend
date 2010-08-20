@@ -364,3 +364,171 @@
 	"AI.h"
 	"Trig.h"
 
+1282282467 source:c:\users\user\dangerwave3\game\ai.cpp
+	"AI.h"
+	"Trig.h"
+
+1282282467 c:\users\user\dangerwave3\game\ai.h
+	"Entity.h"
+	"Trig.h"
+	"LuaManager.h"
+
+1282285830 c:\users\user\dangerwave3\game\entity.h
+	"LuaManager.h"
+	<iostream>
+	"ImageManager.h"
+	"UIState.h"
+	"Trig.h"
+	"MyRect.h"
+
+1282282822 c:\users\user\dangerwave3\game\luamanager.h
+	"luabind.hpp"
+	<stdio.h>
+	<string>
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+	<iostream>
+
+1282282467 c:\users\user\dangerwave3\game\imagemanager.h
+	"SFML/Graphics.hpp"
+	<string>
+	<map>
+
+1282282468 c:\users\user\dangerwave3\game\uistate.h
+	"LuaManager.h"
+	"SFML/Graphics.hpp"
+	"SFML/System.hpp"
+
+1282284068 c:\users\user\dangerwave3\game\trig.h
+	<math.h>
+	"SFML/System.hpp"
+	"MyRect.h"
+
+1282287198 c:\users\user\dangerwave3\game\myrect.h
+
+1282282467 source:c:\users\user\dangerwave3\game\bullet.cpp
+	"Entity.h"
+	"SFML/System.hpp"
+	"string"
+	"bullet.hpp"
+
+1282282467 c:\users\user\dangerwave3\game\bullet.hpp
+	"Entity.h"
+	"slope.hpp"
+	<string>
+
+1282282467 c:\users\user\dangerwave3\game\slope.hpp
+	"Entity.h"
+
+1282282467 source:c:\users\user\dangerwave3\game\entitymanager.cpp
+	"EntityManager.h"
+	"LuaManager.h"
+
+1282282469 c:\users\user\dangerwave3\game\entitymanager.h
+	"Entity.h"
+	<vector>
+
+1282282467 source:c:\users\user\dangerwave3\game\gamemanager.cpp
+	"GameManager.h"
+
+1282282467 c:\users\user\dangerwave3\game\gamemanager.h
+	"EntityManager.h"
+	"QuadTree.h"
+	"State.h"
+	<string>
+
+1282284500 c:\users\user\dangerwave3\game\quadtree.h
+	<SFML/System.hpp>
+	"EntityManager.h"
+	<vector>
+	"MyRect.h"
+
+1282282468 c:\users\user\dangerwave3\game\state.h
+	"SFML/Graphics.hpp"
+
+1282282636 source:c:\users\user\dangerwave3\game\level.cpp
+	"Level.h"
+	<fstream>
+	"ImageManager.h"
+
+1282282636 c:\users\user\dangerwave3\game\level.h
+	"Player.h"
+	<string>
+	<fstream>
+
+1282282468 c:\users\user\dangerwave3\game\player.h
+	"Entity.h"
+	"Animation.h"
+	<string>
+
+1282282467 c:\users\user\dangerwave3\game\animation.h
+	"ImageManager.h"
+	<vector>
+
+1282283456 source:c:\users\user\dangerwave3\game\player.cpp
+	"Player.h"
+	<iostream>
+
+1282285288 source:c:\users\user\dangerwave3\game\quadtree.cpp
+	"QuadTree.h"
+	<fstream>
+	<iostream>
+	"Player.h"
+
+1282282467 source:c:\users\user\dangerwave3\game\state.cpp
+	"State.h"
+
+1282282467 source:c:\users\user\dangerwave3\game\swarmstate.cpp
+	"SwarmState.h"
+	"GameManager.h"
+
+1282282468 c:\users\user\dangerwave3\game\swarmstate.h
+	"State.h"
+	"Player.h"
+
+1282283541 source:c:\users\user\dangerwave3\game\teststate.cpp
+	"TestState.h"
+
+1282282467 c:\users\user\dangerwave3\game\teststate.h
+	"State.h"
+	"GameManager.h"
+	"ImageManager.h"
+	"EntityManager.h"
+	"QuadTree.h"
+	"Player.h"
+	"QuadTree.h"
+	<fstream>
+
+1282282468 source:c:\users\user\dangerwave3\game\bulletmanager.cpp
+	"bulletmanager.hpp"
+	"bullet.hpp"
+
+1282282467 c:\users\user\dangerwave3\game\bulletmanager.hpp
+	"Bullet.hpp"
+
+1282282468 source:c:\users\user\dangerwave3\game\main.cpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"EntityManager.h"
+	"Player.h"
+	"GameManager.h"
+	"TestState.h"
+	"QuadTree.h"
+	<fstream>
+
+1282282468 source:c:\users\user\dangerwave3\game\slope.cpp
+	"slope.hpp"
+
+1282282467 source:c:\users\user\dangerwave3\game\weapon.cpp
+	"weapon.hpp"
+
+1282282468 c:\users\user\dangerwave3\game\weapon.hpp
+	"Entity.h"
+	"ImageManager.h"
+	"LuaManager.h"
+	"SFML/Graphics.hpp"
+	"slope.hpp"
+	<string>
+
