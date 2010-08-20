@@ -26,13 +26,13 @@ namespace cell
     {
         public:
             Entity();
-            Entity(float x, float y, std::string image_name);
+            Entity(float x, float y, float w, float h, std::string image_name);
             virtual ~Entity();
 
             virtual void Render(sf::RenderWindow& window);
             virtual void Update();
 
-            virtual void OnCollision(){std::cout << "collision " << std::endl;}
+            virtual void OnCollision(){}
             virtual void OnCollision(int type){}// add to the enum if you want more or just make a define or somthing
 
             float GetX() const ;

@@ -66,7 +66,9 @@ void QuadTree::Update(EntityManager* mgr)
     for(unsigned int i = 0; i < leafNodes.size(); i++)
     {
         leafNodes[i]->entity.clear();
+        leafNodes[i]->pushed = false;
     }
+
     collisionNodes.clear();
     for(unsigned int i = 0; i< mgr->GetVector().size(); i++)
     {
@@ -78,7 +80,7 @@ void QuadTree::Update(EntityManager* mgr)
 void QuadTree::FindCell(Node* node, cell::Entity& entity)
 {
     if(node->child[0])
-    {
+    {/*
         if(entity.GetX() < node->child[1]->area.x)
         {
             if(entity.GetY() < node->child[2]->area.y)
@@ -100,15 +102,34 @@ void QuadTree::FindCell(Node* node, cell::Entity& entity)
             {
                 FindCell(node->child[3], entity);
             }
+        }*/
+        if(node->child[0]->area.contains(entity.GetRect().x, entity.GetRect().y));
+        {
+            FindCell(node->child[0], entity);
+        }
+        if(node->child[1]->area.contains(entity.GetRect().right(), entity.GetRect().y));
+        {
+            FindCell(node->child[1], entity);
+        }
+        if(node->child[2]->area.contains(entity.GetRect().x, entity.GetRect().bottom()));
+        {
+            FindCell(node->child[2], entity);
+        }
+        if(node->child[3]->area.contains(entity.GetRect().right(), entity.GetRect().bottom()));
+        {
+            FindCell(node->child[3], entity);
         }
     }
     else
     {
         node->AddEntity(&entity);
-        if(!node->pushed && node->entity.size() > 1)
+        if(!node->pushed)
         {
             collisionNodes.push_back(node); // if it has an entity check it for collision
             node->pushed = true;
         }
     }
+
+
+
 }

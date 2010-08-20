@@ -35,6 +35,12 @@ class  LuaManager
         //wrapper to luaL_dostring
         void DoString(std::string command);
 
+        template<class T>
+        void SetGlobal(std::string s, T* var)
+        {
+            luabind::globals(_state)[s.c_str()] = var;
+        }
+
         lua_State* GetState()           { return _state;    }
 
     private:
