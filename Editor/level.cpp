@@ -1,6 +1,10 @@
 #include"headers.hpp"
 #include"level.hpp"
 
+#include <iostream>
+#include <stdio.h>
+#include <string.h>
+#include <fstream>
 Config::Config(string file)
 {
     File = file;
@@ -41,7 +45,7 @@ void Level::Create_Tiles(int X, int Y, int Z)
 
 Level::~Level()
 {
-    delete [] tile;
+   // delete [] tile; // dont delete it unless its a pointer on the heap!!!!!
 }
 
 void Level::Clear_Tiles()
@@ -68,28 +72,29 @@ void Level::Clear_Tiles()
     }
 }
 
-void Level::Save_Map(sf::String &save, int H, int W)
+void Level::Save_Map(std::string buffer, int H, int W)
 {
 
-    string buffer = save.GetText();
+
 
     cout<<"Is something wrong?"<<endl<<"converted sfml to string: "<<buffer<<endl;
 #ifndef Debug
     cout<<"buffer: "<< buffer <<endl;
-    ofstream Save( buffer.c_str() );
 #endif
 
 #ifdef Debug
     cout<<"debug mode. Please Enter Filename: "<<endl;
     cin>>buffer;
     cin.ignore();
-    ofstream Save( buffer.c_str() );
-#endif
 
-    cout<<"Saving to: "<< buffer <<" Length: "<<save.GetSize()<<endl;
+#endif
+    ofstream Save;
+    Save.open(buffer.c_str());
 
     if(Save.good())
     {
+         cout<<"Saving to: "<< buffer <<" Length: "<<buffer.size()<<endl;
+
         cout<<"File being created..."<<endl;
         Save<<"H "<< H <<" W "<< W <<"\n\n";
 
@@ -114,21 +119,21 @@ void Level::Save_Map(sf::String &save, int H, int W)
             Save<<"\n \n \n";
         }
         cout<<"done."<<endl;
+        cout << "file is good" << endl;
     }
     else
     {
         cout<<"File: "<< buffer<<" could not be created!"<<endl;
     }
+    Save.flush(); // just make sure everything is written
     Save.close();
 
 }
 
-void Level::Load_Map(sf::String &load)
+void Level::Load_Map(std::string buffer)
 {
 
     string temp;
-
-    string buffer = (string)load.GetText();
 #ifndef Debug
 
     ifstream Load( buffer.c_str() );
@@ -216,9 +221,14 @@ void Level::Draw(sf::Image &image, sf::RenderWindow &Window)
             {
                 for(int c = 0; c < y; c++)
                 {
-                    draw.SetSubRect( sf::IntRect(tile[a][b][c].s_x,tile[a][b][c].s_y, tile[a][b][c].s_x + tile[a][b][c].w, tile[a][b][c].s_y + tile[a][b][c].h) );
-                    draw.SetPosition(tile[a][b][c].x + ofs_x, tile[a][b][c].y + ofs_y);
-                    Window.Draw(draw);
+                    if(tile[a][b][c].rendered)
+                    {
+                        draw.SetSubRect( sf::IntRect(tile[a][b][c].s_x,tile[a][b][c].s_y,
+                                                    tile[a][b][c].s_x + tile[a][b][c].w,
+                                                    tile[a][b][c].s_y + tile[a][b][c].h) );
+                        draw.SetPosition(tile[a][b][c].x + ofs_x, tile[a][b][c].y + ofs_y);
+                        Window.Draw(draw);
+                    }
                 }
             }
         }

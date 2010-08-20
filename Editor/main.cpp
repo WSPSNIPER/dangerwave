@@ -34,10 +34,12 @@ void mang(Brush &brush, Level &level, Button &button, sf::RenderWindow &Wind, sf
                         if(level.layer != -1)
                         {
                             level.tile[level.layer][b][c].s_x = brush.Tile * 32;
+                            level.tile[level.layer][b][c].rendered = true;
                         }
                         else
                         {
                             level.tile[2][b][c].s_x = brush.Tile * 32;
+                            level.tile[2][b][c].rendered = true;
                         }
                     }
                 }
@@ -110,10 +112,12 @@ void mang(Brush &brush, Level &level, Button &button, sf::RenderWindow &Wind, sf
             console.Draw(Wind);
             Wind.Display();
         }
+
 #endif
         //cout<<"saving to "<<console.entered<<"\n";
-        level.Save_Map(console.Text,32,32); // maby make a create new function so when you save you have the vars from the
+        level.Save_Map(console.get_text(),32,32); // maby make a create new function so when you save you have the vars from the
         // new map and this would be save as but the map would have a w and h
+        console.set_entering(false);
         console.clear();
     }
 
@@ -133,9 +137,10 @@ void mang(Brush &brush, Level &level, Button &button, sf::RenderWindow &Wind, sf
             Wind.Display();
         }
 #endif
-        cout << console.entered <<endl;
-        cout << "loading from " << console.entered << endl;
-        level.Load_Map(console.Text);
+        cout << console.get_text()<<endl;
+        cout << "loading from " << console.get_text() << endl;
+        level.Load_Map(console.get_text());
+        console.set_entering(false);
         console.clear();
     }
     if(temp == "Layer1")
