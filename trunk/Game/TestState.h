@@ -8,6 +8,7 @@
 #include "QuadTree.h"
 #include "Player.h"
 #include "QuadTree.h"
+#include "Level.h"
 
 #include <fstream>
 class TestState : public State
@@ -31,6 +32,7 @@ class TestState : public State
         EntityManager* _entityManager;
         cell::LuaManager* _luaManager;
 
+        Level _level;
         QuadTree t;
         std::ofstream file;
 };

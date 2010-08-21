@@ -33,6 +33,13 @@ class Level
         void Render(sf::RenderWindow& window);
         void SetUp();
 
+        int GetWidth() const { return m_width; }
+        int GetHeight() const { return m_height; }
+        std::string GetDir() const { return m_dir; }
+
+        Tile& GetTile(int l, int w, int h) { return m_tile[l][w][h]; }
+
+
     private:
         Tile m_tile[3][100][100];
         int m_count, m_width, m_height;

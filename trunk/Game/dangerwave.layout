@@ -13,23 +13,29 @@
 	<File name="EntityManager.cpp" open="1" top="0" tabpos="5">
 		<Cursor position="837" topLine="42" />
 	</File>
-	<File name="EntityManager.h" open="0" top="0" tabpos="10">
-		<Cursor position="1330" topLine="15" />
+	<File name="EntityManager.h" open="1" top="0" tabpos="11">
+		<Cursor position="959" topLine="13" />
 	</File>
 	<File name="GameManager.h" open="0" top="0" tabpos="3">
 		<Cursor position="592" topLine="5" />
 	</File>
+	<File name="Level.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="2149" topLine="68" />
+	</File>
+	<File name="Level.h" open="1" top="0" tabpos="10">
+		<Cursor position="1096" topLine="27" />
+	</File>
 	<File name="Player.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="168" topLine="38" />
+		<Cursor position="168" topLine="25" />
 	</File>
 	<File name="Player.h" open="1" top="0" tabpos="1">
-		<Cursor position="56" topLine="0" />
+		<Cursor position="55" topLine="0" />
 	</File>
-	<File name="QuadTree.cpp" open="1" top="0" tabpos="9">
-		<Cursor position="2770" topLine="39" />
+	<File name="QuadTree.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="2079" topLine="73" />
 	</File>
-	<File name="QuadTree.h" open="1" top="0" tabpos="7">
-		<Cursor position="142" topLine="0" />
+	<File name="QuadTree.h" open="1" top="0" tabpos="6">
+		<Cursor position="1795" topLine="52" />
 	</File>
 	<File name="State.h" open="0" top="0" tabpos="11">
 		<Cursor position="515" topLine="0" />
@@ -41,10 +47,10 @@
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="TestState.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="565" topLine="0" />
+		<Cursor position="1242" topLine="53" />
 	</File>
-	<File name="TestState.h" open="0" top="0" tabpos="13">
-		<Cursor position="0" topLine="0" />
+	<File name="TestState.h" open="1" top="0" tabpos="9">
+		<Cursor position="789" topLine="16" />
 	</File>
 	<File name="bullet.hpp" open="0" top="0" tabpos="14">
 		<Cursor position="0" topLine="0" />
