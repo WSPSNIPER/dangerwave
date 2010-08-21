@@ -22,15 +22,12 @@ Level::~Level()
 
 void Level::Load(std::string file, std::string img)
 {
-    if(img != "" && img != m_dir)
-    {
-        m_dir = img;
-        SetUp();
-    }
+
 
     ifstream Load(file.c_str());
     std::string temp = "";
-    int x, y, layer, x_coord, y_coord, strip_x, strip_y, w, h;
+    int x, y, layer, x_coord, y_coord, strip_x, strip_y, w, h, flag;
+    flag = 0;
     if(Load.is_open())
     {
         while(Load>>temp)
@@ -38,10 +35,13 @@ void Level::Load(std::string file, std::string img)
             if(temp == "MapX")
             {
                 Load>>x;
+                m_width = x;
             }
             if(temp == "MapY")
             {
                 Load>>y;
+                m_height = y;
+
             }
             if(temp == "Layer")
             {
@@ -67,6 +67,10 @@ void Level::Load(std::string file, std::string img)
             {
                 Load>>strip_y;
             }
+            if(temp == "Flag")
+            {
+                Load>>flag;
+            }
             if(temp == "H")
             {
                 Load>>h;
@@ -83,11 +87,20 @@ void Level::Load(std::string file, std::string img)
                 m_tile[layer][x_coord / w][y_coord / h].s_y = strip_y;
                 m_tile[layer][x_coord / w][y_coord / h].h = h;
                 m_tile[layer][x_coord / w][y_coord / h].w = w;
-                m_tile[layer][x_coord / w][y_coord / h].image.SetSubRect(sf::IntRect(strip_x, strip_y, strip_x+w, strip_y+h));
-                m_height = y_coord / h;
-                m_width = x_coord / w;
+                m_tile[layer][x_coord / w][y_coord / h].flag = flag;
             }
         }
+    }
+
+    if(img != "")
+    {
+        m_dir = img;
+        SetUp();
+    }
+    else
+    {
+        m_dir = "tiles.png";
+        SetUp();
     }
 }
 
@@ -100,6 +113,12 @@ void Level::SetUp()
             for(size_t y = 0; y < m_height; y++)
             {
                 m_tile[l][x][y].image.SetImage(cell::ImageManager::GetInst()->GetImage(m_dir));
+                m_tile[l][x][y].image.SetSubRect(sf::IntRect(m_tile[l][x][y].s_x,
+                                                             m_tile[l][x][y].s_y,
+                                                             m_tile[l][x][y].s_x+m_tile[l][x][y].w,
+                                                             m_tile[l][x][y].s_y+m_tile[l][x][y].h));
+                m_tile[l][x][y].image.SetPosition((float)m_tile[l][x][y].x,
+                                                  (float)m_tile[l][x][y].y);
             }
         }
     }

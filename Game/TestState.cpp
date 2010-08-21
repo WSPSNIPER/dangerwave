@@ -15,12 +15,14 @@ TestState::TestState()
 _manager(cell::ImageManager::GetInst()),
 _entityManager(EntityManager::GetInst()),
 _luaManager(cell::LuaManager::GetInst()),
-t(2)
+_level("hella blocks.map", "tiles.png"),
+t(2, _level.GetWidth(), _level.GetHeight())
+
 {
 
     _entityManager->Add(new Player(100, 100, "player.png"));
     _entityManager->Add(new cell::Entity(110, 110, 80, 120, "player.png"));
-    _entityManager->Add(new cell::Entity(300, 100, 80, 120, "player.png"));
+    _entityManager->Add(new cell::Entity(450, 100, 80, 120, "player.png"));
     //ExportPlayer(&_player); // export the player to lua
 }
 
@@ -62,6 +64,7 @@ void TestState::Update(GameManager* game)
 
 void TestState::Render(GameManager* game)
 {
+    _level.Render(*game);
     _entityManager->Render(*game);
 }
 

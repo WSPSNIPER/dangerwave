@@ -38,6 +38,9 @@ namespace cell
             float GetX() const ;
             float GetY() const ;
 
+            void SetX(int x) { SetPosition(x, GetY());}
+            void SetY(int y) { SetPosition(GetX(), y);}
+
             const sf::Vector2f GetPosition() const;
 
             const sf::Sprite& GetSprite();
