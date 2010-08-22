@@ -81,29 +81,8 @@ void QuadTree::Update(EntityManager* mgr)
 void QuadTree::FindCell(Node* node, cell::Entity& entity)
 {
     if(node->child[0])
-    {/*
-        if(entity.GetX() < node->child[1]->area.x)
-        {
-            if(entity.GetY() < node->child[2]->area.y)
-            {
-                FindCell(node->child[0], entity);
-            }
-            else
-            {
-                FindCell(node->child[2], entity);
-            }
-        }
-        else
-        {
-            if(entity.GetY() < node->child[2]->area.y)
-            {
-                FindCell(node->child[1], entity);
-            }
-            else
-            {
-                FindCell(node->child[3], entity);
-            }
-        }*/
+    {
+        // cant use if else because the rect could be in multiple nodes
         if(node->child[0]->area.contains(entity.GetRect().x, entity.GetRect().y));
         {
             FindCell(node->child[0], entity);

@@ -3,6 +3,14 @@
 
 #include "State.h"
 #include "Player.h"
+#include "EntityManager.h"
+#include "ImageManager.h"
+#include "QuadTree.h"
+#include "Level.h"
+#include "Trig.h"
+
+using namespace cell;
+
 
 /// @SWARMSTATE
 /// @Inherits State ( State.h )
@@ -30,7 +38,11 @@ class SwarmState : public State
         void Render(GameManager*);
 
     private:
-        Player _player;
+        Player*         _player;
+        Level           _level;
+        EntityManager*  _manager;
+        ImageManager*   _images;
+        QuadTree        _tree;
         /// @TODO finish this state
 
 

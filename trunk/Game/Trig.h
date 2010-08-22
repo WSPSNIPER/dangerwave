@@ -52,6 +52,12 @@ namespace cell
             return ((atan2f(vector2.x - vector1.x, vector2.y - vector1.y) * 180 / 3.14593)+180);
         }
 
+        inline static sf::Vector2f GetBulletPath(sf::Vector2f& vec1, sf::Vector2f& vec2)
+        {
+            float length = GetLength(vec1, vec2);
+            return sf::Vector2f((vec2.x/length)-(vec1.x/length), (vec2.y/length)-(vec1.y/length));
+        }
+
 
         inline static float GetLength(const sf::Vector2f& vector)
         {
