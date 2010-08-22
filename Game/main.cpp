@@ -1,3 +1,5 @@
+
+
 #include <SFML/Graphics.hpp>
 
 #include <SFML/System.hpp>
@@ -8,6 +10,9 @@
 #include "TestState.h"
 #include "QuadTree.h"
 #include <fstream>
+
+/// OMG I HAVENT SEEN THIS FILE IN A WHILE :)
+
 using namespace std; // just because im cool :)
 int main()
 {
@@ -23,5 +28,6 @@ int main()
         game.Render();
     }
     game.Cleanup();
+
     return EXIT_SUCCESS;
 }

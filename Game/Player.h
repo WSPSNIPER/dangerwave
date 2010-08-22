@@ -4,13 +4,14 @@
 #include "Entity.h"
 #include "Animation.h"
 #include <string>
-
+#include "bullet.hpp"
+#include "slope.hpp"
 /// @todo Create a Rect class to take care of Entity Collision
-
+const float PLAYER_SPEED = 3.f;
 class Player : public cell::Entity
 {
     public:
-        Player(float startX, float startY, std::string image_name);
+        Player(float startX, float startY, std::string image_name, std::string script="");
         ~Player();
 
         void ChangeAnimation(std::string anim_name);
@@ -20,17 +21,22 @@ class Player : public cell::Entity
         virtual void Render(sf::RenderWindow& window);
         void RotateToMouse();
 
-        virtual void OnCollision();
+        virtual void OnCollision(int t = 0);
+
+        void Shoot();
 
         int  GetHp() const { return _hp; }
         void SetHp(int hp) { _hp = hp; }
-
-        void Die() { std::cout << "player dead " << std::endl; }
+        void ChangeHp(int c) { _hp += c; }
 
     private:
+
         int             _hp;
         cell::Animation _animation;
         std::string     _currentAnim;
+        std::string     _script;
+        float _angle;
+        Slope _slope;
 
 };
 

@@ -14,8 +14,6 @@ float Slope::Run(float x1,float x2)
 sf::Vector2f Slope::RiseOverRun(sf::Vector2f First, sf::Vector2f Second)
 {
 
-
-
     return sf::Vector2f(Second.y - First.y, Second.x - First.x);
 }
 

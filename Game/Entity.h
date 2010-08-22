@@ -11,12 +11,13 @@
  * @class Entity is a class that represents a base movable object, it is ment to be overriden
  * and used for polymorphism
  **************************************************************************************************/
-
+// this class got bigger then i thought it was going to be lol
 enum EntityType
 {
     MAP_OBJECT = 0,
     BULLET,
-    PLAYER // add more when you need to
+    PLAYER,
+    ENEMY
 };
 namespace cell
 {
@@ -37,6 +38,16 @@ namespace cell
 
             float GetX() const ;
             float GetY() const ;
+
+            int GetType() { return _type; }
+            void SetType(int t) { _type = t; }
+
+            void SetAlive(bool a) { _alive = a; }
+
+            bool Dead() { return !_alive; }
+            bool Alive() { return _alive; }
+
+            void Kill() { _alive = false; }
 
             void SetX(int x) { SetPosition(x, GetY());}
             void SetY(int y) { SetPosition(GetX(), y);}
@@ -62,14 +73,16 @@ namespace cell
             virtual void SetImage(std::string filename);   // i had to make them all virtual because some entities use animations :)
 
         protected:
-            void            _turnToMouse();
-            void            _turnToPoint(sf::Vector2f& point);
-            cell::UIState*        _state;
-            cell::ImageManager&   _imgMgr;
-            sf::Vector2f    _playerPos,
-                            _mousePos;
-            sf::Sprite      _sprite;
-            MyRect   _collisionRect;
+            void                    _turnToMouse();
+            void                    _turnToPoint(sf::Vector2f& point);
+            cell::UIState*          _state;
+            cell::ImageManager&     _imgMgr;
+            sf::Vector2f            _playerPos,
+                                    _mousePos;
+            sf::Sprite              _sprite;
+            MyRect                  _collisionRect;
+            bool                    _alive;
+            int                     _type;
     };
 }
 
