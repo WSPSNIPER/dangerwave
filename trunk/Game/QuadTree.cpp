@@ -52,7 +52,8 @@ void QuadTree::CheckCollisions()
                 {
                     if(collisionNodes[i]->entity[n]->Collision(collisionNodes[i]->entity[z]->GetRect()))
                     {
-                        collisionNodes[i]->entity[n]->OnCollision();
+                        int type = collisionNodes[i]->entity[z]->GetType();
+                        collisionNodes[i]->entity[n]->OnCollision(type); // 0 is so it calls the Collision(int)
                     }
                 }
             }

@@ -10,7 +10,6 @@ class Slope
    public:
 
 
-
    float Rise(float y1,float y2);
 
 

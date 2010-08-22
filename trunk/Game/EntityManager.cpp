@@ -67,9 +67,16 @@ void EntityManager::Render(sf::RenderWindow& window)
 
 void EntityManager::Update()
 {
-    for(unsigned int i = 0; i < _entity.size(); i++)
+    for(std::vector<cell::Entity*>::iterator it = _entity.begin();
+        it != _entity.end();
+        ++it )
     {
-        _entity[i]->Update();
+        (*it)->Update();
+        if((*it)->Dead()){
+            delete (*it);
+            _entity.erase(it);
+            --it;
+        }
     }
 }
 

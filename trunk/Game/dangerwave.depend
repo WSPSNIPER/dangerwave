@@ -373,7 +373,7 @@
 	"Trig.h"
 	"LuaManager.h"
 
-1282413474 c:\users\user\dangerwave3\game\entity.h
+1282450823 c:\users\user\dangerwave3\game\entity.h
 	"LuaManager.h"
 	<iostream>
 	"ImageManager.h"
@@ -407,21 +407,21 @@
 
 1282287198 c:\users\user\dangerwave3\game\myrect.h
 
-1282282467 source:c:\users\user\dangerwave3\game\bullet.cpp
+1282453391 source:c:\users\user\dangerwave3\game\bullet.cpp
 	"Entity.h"
 	"SFML/System.hpp"
 	"string"
 	"bullet.hpp"
 
-1282282467 c:\users\user\dangerwave3\game\bullet.hpp
+1282445667 c:\users\user\dangerwave3\game\bullet.hpp
 	"Entity.h"
 	"slope.hpp"
 	<string>
 
-1282282467 c:\users\user\dangerwave3\game\slope.hpp
+1282453005 c:\users\user\dangerwave3\game\slope.hpp
 	"Entity.h"
 
-1282282467 source:c:\users\user\dangerwave3\game\entitymanager.cpp
+1282449855 source:c:\users\user\dangerwave3\game\entitymanager.cpp
 	"EntityManager.h"
 	"LuaManager.h"
 
@@ -457,20 +457,24 @@
 	<string>
 	<fstream>
 
-1282282468 c:\users\user\dangerwave3\game\player.h
+1282453005 c:\users\user\dangerwave3\game\player.h
 	"Entity.h"
 	"Animation.h"
 	<string>
+	"bullet.hpp"
+	"slope.hpp"
 
 1282282467 c:\users\user\dangerwave3\game\animation.h
 	"ImageManager.h"
 	<vector>
 
-1282283456 source:c:\users\user\dangerwave3\game\player.cpp
+1282453435 source:c:\users\user\dangerwave3\game\player.cpp
 	"Player.h"
 	<iostream>
+	"EntityManager.h"
+	"slope.hpp"
 
-1282413905 source:c:\users\user\dangerwave3\game\quadtree.cpp
+1282450657 source:c:\users\user\dangerwave3\game\quadtree.cpp
 	"QuadTree.h"
 	<fstream>
 	<iostream>
@@ -508,7 +512,7 @@
 1282282467 c:\users\user\dangerwave3\game\bulletmanager.hpp
 	"Bullet.hpp"
 
-1282282468 source:c:\users\user\dangerwave3\game\main.cpp
+1282450483 source:c:\users\user\dangerwave3\game\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<iostream>
@@ -519,7 +523,7 @@
 	"QuadTree.h"
 	<fstream>
 
-1282282468 source:c:\users\user\dangerwave3\game\slope.cpp
+1282453624 source:c:\users\user\dangerwave3\game\slope.cpp
 	"slope.hpp"
 
 1282282467 source:c:\users\user\dangerwave3\game\weapon.cpp
@@ -532,4 +536,10 @@
 	"SFML/Graphics.hpp"
 	"slope.hpp"
 	<string>
+
+1282414225 source:c:\users\user\dangerwave3\game\menustate.cpp
+	"MenuState.h"
+
+1282447511 c:\users\user\dangerwave3\game\menustate.h
+	"State.h"
 
