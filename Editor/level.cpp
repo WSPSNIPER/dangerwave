@@ -31,7 +31,19 @@ Config::Config(string file)
     config.close();
 }
 
-
+void Level::SetFlag(int f)
+{
+    for(int a = 0; a < z; a++)
+    {
+        for(int b = 0; b < x; b++)
+        {
+            for(int c = 0; c < y; c++)
+            {
+                tile[a][b][c].flag = f;
+            }
+        }
+    }
+}
 void Level::Create_Tiles(int X, int Y, int Z)
 {
     layer = -1;
@@ -65,7 +77,7 @@ void Level::Clear_Tiles()
                 tile[a][b][c].s_y = 0;
                 tile[a][b][c].h = 32;
                 tile[a][b][c].w = 32;
-                cout<<"Tile: "<< counter <<endl;
+                tile[a][b][c].flag = 0;
                 counter++;
             }
         }
@@ -112,6 +124,7 @@ void Level::Save_Map(std::string buffer, int H, int W)
                     Save<<" Strip_y "<<tile[a][b][c].s_y;
                     Save<<" Hieght "<< H;
                     Save<<" Width "<< W;
+                    Save<<" Flag "<< tile[a][b][c].flag;
                     Save<<" END \n\n";
                 }
                 Save<<"\n";
@@ -134,6 +147,7 @@ void Level::Load_Map(std::string buffer)
 {
 
     string temp;
+    int flag;
 #ifndef Debug
 
     ifstream Load( buffer.c_str() );
@@ -167,6 +181,10 @@ void Level::Load_Map(std::string buffer)
             {
                 Load>>tile_count;
             }
+            if(temp == "Flag")
+            {
+                Load>>flag;
+            }
             if(temp == "X")
             {
                 Load>>x_coord;
@@ -199,6 +217,8 @@ void Level::Load_Map(std::string buffer)
                 tile[layer][x_coord / w][y_coord / h].s_y = strip_y;
                 tile[layer][x_coord / w][y_coord / h].h = h;
                 tile[layer][x_coord / w][y_coord / h].w = w;
+                tile[layer][x_coord / w][y_coord / h].flag = flag;
+
             }
         }
     }

@@ -67,24 +67,29 @@ void mang(Brush &brush, Level &level, Button &button, sf::RenderWindow &Wind, sf
     if(Wind.GetInput().IsKeyDown(sf::Key::Num1))
     {
         brush.Tile = 0;
+        level.SetFlag(0);
     }
 
     if(Wind.GetInput().IsKeyDown(sf::Key::Num2))
     {
         brush.Tile = 1;
+        level.SetFlag(0);
     }
     if(Wind.GetInput().IsKeyDown(sf::Key::Num3))
     {
         brush.Tile = 2;
+        level.SetFlag(1);
     }
     if(Wind.GetInput().IsKeyDown(sf::Key::Num4))
     {
         brush.Tile = 3;
+        level.SetFlag(1);
     }
 
     if(Wind.GetInput().IsKeyDown(sf::Key::Num5))
     {
         brush.Tile = 4;
+        level.SetFlag(0);
     }
 
     if(Wind.GetInput().IsKeyDown(sf::Key::Num6))

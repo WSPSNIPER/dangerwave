@@ -1244,3 +1244,307 @@
 	"headers.hpp"
 	"brush.hpp"
 
+1282282303 source:c:\users\user\dangerwave3\editor\button.cpp
+	"headers.hpp"
+	"button.hpp"
+
+1282282303 c:\users\user\dangerwave3\editor\headers.hpp
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<vector>
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+
+1282281345 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Randomizer.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1282281345 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\config.hpp
+	<climits>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\clock.hpp
+	<SFML/Config.hpp>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\lock.hpp
+	<SFML/System/NonCopyable.hpp>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\noncopyable.hpp
+	<SFML/Config.hpp>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\mutex.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Win32/Mutex.hpp>
+	<SFML/System/Unix/Mutex.hpp>
+
+1282281341 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\win32\mutex.hpp
+	<SFML/System/NonCopyable.hpp>
+	<windows.h>
+
+1282281341 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\unix\mutex.hpp
+	<SFML/System/NonCopyable.hpp>
+	<pthread.h>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\randomizer.hpp
+	<SFML/Config.hpp>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\sleep.hpp
+	<SFML/Config.hpp>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\thread.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Win32/Thread.hpp>
+	<SFML/System/Unix/Thread.hpp>
+
+1282281341 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\win32\thread.hpp
+	<SFML/System/NonCopyable.hpp>
+	<windows.h>
+
+1282281341 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\unix\thread.hpp
+	<SFML/System/NonCopyable.hpp>
+	<pthread.h>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\unicode.hpp
+	<SFML/Config.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<stdlib.h>
+	<SFML/System/Unicode.inl>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\unicode.inl
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\vector2.inl
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\vector3.inl
+
+1282281345 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PostFX.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/String.hpp>
+	<SFML/Graphics/View.hpp>
+
+1282281345 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window.hpp
+	<SFML/System.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Input.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowListener.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/Window/OpenGL.hpp>
+
+1282281343 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window\context.hpp
+	<SFML/Config.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1282281343 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window\event.hpp
+	<SFML/Config.hpp>
+
+1282281343 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window\input.hpp
+	<SFML/Config.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/WindowListener.hpp>
+
+1282281343 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window\windowlistener.hpp
+	<SFML/Config.hpp>
+
+1282281343 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window\videomode.hpp
+	<SFML/Config.hpp>
+	<cstdlib>
+
+1282281343 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window\window.hpp
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Input.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowListener.hpp>
+	<SFML/Window/WindowSettings.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<queue>
+	<string>
+
+1282281343 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window\windowhandle.hpp
+	<SFML/Config.hpp>
+
+1282281343 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window\windowsettings.hpp
+
+1282281343 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window\windowstyle.hpp
+
+1282281343 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\window\opengl.hpp
+	<SFML/Config.hpp>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\color.hpp
+	<SFML/Config.hpp>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\font.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\resource.hpp
+	<set>
+	<SFML/System/Resource.inl>
+	<SFML/System/ResourcePtr.inl>
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\resource.inl
+
+1282281342 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\system\resourceptr.inl
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\glyph.hpp
+	<SFML/Config.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\rect.hpp
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\rect.inl
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\image.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\postfx.hpp
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Image.hpp>
+	<istream>
+	<map>
+	<string>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\drawable.hpp
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Matrix3.hpp>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\matrix3.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Vector2.hpp>
+	<math.h>
+	<SFML/Graphics/Matrix3.inl>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\matrix3.inl
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\renderwindow.hpp
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\rendertarget.hpp
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\view.hpp
+	<SFML/Config.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Matrix3.hpp>
+	<SFML/System/Vector2.hpp>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\shape.hpp
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/System/Vector2.hpp>
+	<vector>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\sprite.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1282281337 c:\users\user\dangerwave3\include\sfml-1.6\include\sfml\graphics\string.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+
+1282282303 c:\users\user\dangerwave3\editor\button.hpp
+
+1282282303 source:c:\users\user\dangerwave3\editor\console.cpp
+	"headers.hpp"
+	"console.hpp"
+
+1282282303 c:\users\user\dangerwave3\editor\console.hpp
+
+1282494089 source:c:\users\user\dangerwave3\editor\main.cpp
+	"headers.hpp"
+	"level.hpp"
+	"brush.hpp"
+	"system.hpp"
+	"button.hpp"
+	"console.hpp"
+
+1282494089 c:\users\user\dangerwave3\editor\level.hpp
+	<string>
+
+1282282303 c:\users\user\dangerwave3\editor\brush.hpp
+
+1282282303 c:\users\user\dangerwave3\editor\system.hpp
+
+1282282303 source:c:\users\user\dangerwave3\editor\system.cpp
+	"headers.hpp"
+	"system.hpp"
+
+1282282301 source:c:\users\user\dangerwave3\editor\tileset.cpp
+	"headers.hpp"
+	"level.hpp"
+	"tileset.hpp"
+
+1282282301 c:\users\user\dangerwave3\editor\tileset.hpp
+
+1282282303 source:c:\users\user\dangerwave3\editor\brush.cpp
+	"headers.hpp"
+	"brush.hpp"
+
+1282494314 source:c:\users\user\dangerwave3\editor\level.cpp
+	"headers.hpp"
+	"level.hpp"
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<fstream>
+

@@ -4,13 +4,13 @@
 	<File name="brush.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="46" topLine="0" />
 	</File>
-	<File name="brush.hpp" open="0" top="0" tabpos="8">
-		<Cursor position="143" topLine="0" />
+	<File name="brush.hpp" open="1" top="0" tabpos="9">
+		<Cursor position="205" topLine="0" />
 	</File>
-	<File name="button.cpp" open="0" top="0" tabpos="3">
+	<File name="button.cpp" open="1" top="0" tabpos="13">
 		<Cursor position="21" topLine="0" />
 	</File>
-	<File name="button.hpp" open="0" top="0" tabpos="4">
+	<File name="button.hpp" open="1" top="0" tabpos="11">
 		<Cursor position="225" topLine="0" />
 	</File>
 	<File name="console.cpp" open="1" top="0" tabpos="2">
@@ -19,17 +19,17 @@
 	<File name="console.hpp" open="1" top="0" tabpos="1">
 		<Cursor position="277" topLine="0" />
 	</File>
-	<File name="headers.hpp" open="0" top="0" tabpos="7">
+	<File name="headers.hpp" open="1" top="0" tabpos="10">
 		<Cursor position="57" topLine="0" />
 	</File>
-	<File name="level.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="2685" topLine="167" />
+	<File name="level.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="1558" topLine="63" />
 	</File>
 	<File name="level.hpp" open="1" top="0" tabpos="3">
-		<Cursor position="1009" topLine="27" />
+		<Cursor position="1200" topLine="41" />
 	</File>
-	<File name="main.cpp" open="1" top="1" tabpos="5">
-		<Cursor position="6905" topLine="233" />
+	<File name="main.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="2891" topLine="108" />
 	</File>
 	<File name="system.cpp" open="1" top="0" tabpos="6">
 		<Cursor position="829" topLine="27" />
@@ -37,10 +37,10 @@
 	<File name="system.hpp" open="1" top="0" tabpos="7">
 		<Cursor position="175" topLine="0" />
 	</File>
-	<File name="tileset.cpp" open="0" top="0" tabpos="3">
-		<Cursor position="521" topLine="10" />
+	<File name="tileset.cpp" open="1" top="0" tabpos="12">
+		<Cursor position="521" topLine="17" />
 	</File>
-	<File name="tileset.hpp" open="0" top="0" tabpos="4">
+	<File name="tileset.hpp" open="1" top="0" tabpos="8">
 		<Cursor position="71" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

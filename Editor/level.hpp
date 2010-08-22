@@ -57,6 +57,8 @@ public:
 
     void Clear_Tiles();
 
+    void SetFlag(int f);
+
     bool edited;
 
     string LuaScript;
