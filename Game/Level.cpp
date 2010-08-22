@@ -87,7 +87,12 @@ void Level::Load(std::string file, std::string img)
                 m_tile[layer][x_coord / w][y_coord / h].s_y = strip_y;
                 m_tile[layer][x_coord / w][y_coord / h].h = h;
                 m_tile[layer][x_coord / w][y_coord / h].w = w;
-                m_tile[layer][x_coord / w][y_coord / h].flag = flag;
+                if(strip_x >= 64)
+                {
+                    m_tile[layer][x_coord / w][y_coord / h].flag = 1;
+                }
+                else
+                    m_tile[layer][x_coord / w][y_coord / h].flag = 0;
             }
         }
     }
@@ -106,11 +111,11 @@ void Level::Load(std::string file, std::string img)
 
 void Level::SetUp()
 {
-    for(size_t l = 0; l < 3; l++)
+    for(int l = 0; l < 3; l++)
     {
-        for(size_t x = 0; x < m_width; x++)
+        for(int x = 0; x < m_width; x++)
         {
-            for(size_t y = 0; y < m_height; y++)
+            for(int y = 0; y < m_height; y++)
             {
                 m_tile[l][x][y].image.SetImage(cell::ImageManager::GetInst()->GetImage(m_dir));
                 m_tile[l][x][y].image.SetSubRect(sf::IntRect(m_tile[l][x][y].s_x,
@@ -125,14 +130,15 @@ void Level::SetUp()
 }
 
 
-void Level::Render(sf::RenderWindow& window)
+void Level::Render(sf::RenderWindow& window)//, EntityManager* mgr)
 {
-    for(size_t l = 0; l < 3; l++)
+    for(int l = 0; l < 3; l++)
     {
-        for(size_t x = 0; x < m_width; x++)
+        for(int x = 0; x < m_width; x++)
         {
-            for(size_t y = 0; y < m_height; y++)
+            for(int y = 0; y < m_height; y++)
             {
+                if(window.GetView().GetRect().Contains(x*32, y*32));
                 window.Draw(m_tile[l][x][y].image);
             }
         }

@@ -62,11 +62,11 @@ void Weapon::ConnectToEntity(cell::Entity*  NewOwner)
 {
     _owner = NewOwner;
 
-    for(int a; a < _mag; a++)
+    /*for(int a; a < _mag; a++)
     {
         int i = 0;
         //BulletManager::KillBullet(bullet[a]);
-    }
+    }*/
 }
 
 void Weapon::DisconnectFromEntity(cell::Entity* OldOwner)

@@ -1,6 +1,6 @@
 #ifndef _PLAYER_H_
 #define _PLAYER_H_
-
+#include "Trig.h"
 #include "Entity.h"
 #include "Animation.h"
 #include <string>
@@ -37,6 +37,7 @@ class Player : public cell::Entity
         std::string     _script;
         float _angle;
         Slope _slope;
+        sf::Clock _shotTimer;
 
 };
 

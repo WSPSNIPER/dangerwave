@@ -4,6 +4,7 @@
 #include "slope.hpp"
 using namespace cell;
 
+const float RATE_OF_FIRE = 0.5f;
 Player::Player(float setX, float setY, std::string setName, std::string script)
 :
 cell::Entity(setX, setY, 80, 120/4, setName),
@@ -35,14 +36,18 @@ void Player::ChangeAnimation(std::string name)
 void Player::Shoot()
 {
     /// @todo fix the bullet dir
-    EntityManager::GetInst()->Add(new Bullet(_angle, 0, (_slope.RiseOverRun(_mousePos, _playerPos)),
+    EntityManager::GetInst()->Add(new Bullet(_angle, 0, Vect::GetBulletPath(_playerPos, _mousePos),
                                              _playerPos, "player"));
 }
 void Player::HandleInput(const sf::Input &input)
 {
     if(input.IsKeyDown(sf::Key::Space))
     {
-        Shoot();
+        if(_shotTimer.GetElapsedTime() >= RATE_OF_FIRE)
+        {
+            _shotTimer.Reset();
+            Shoot();
+        }
     }
     if(input.IsKeyDown(sf::Key::W))
     {

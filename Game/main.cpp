@@ -8,6 +8,7 @@
 #include "Player.h"
 #include "GameManager.h"
 #include "TestState.h"
+#include "MenuState.h"
 #include "QuadTree.h"
 #include <fstream>
 
@@ -19,7 +20,7 @@ int main()
     GameManager game(640, 480, 32, "Game");
 
     game.SetFramerateLimit(60);
-    game.PushState(TestState::GetInst());
+    game.PushState(MenuState::GetInst());
     game.Init();
     while(game.IsOpened())
     {
