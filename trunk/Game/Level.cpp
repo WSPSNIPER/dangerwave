@@ -132,14 +132,14 @@ void Level::SetUp()
 
 void Level::Render(sf::RenderWindow& window)//, EntityManager* mgr)
 {
-    for(int l = 0; l < 3; l++)
+    for(int l = 2; l < 3; l++)
     {
-        for(int x = 0; x < m_width; x++)
+        for(int x = 0; x < 640/32+32; x++)
         {
-            for(int y = 0; y < m_height; y++)
+            for(int y = 0; y < 480/32+32; y++)
             {
                 if(window.GetView().GetRect().Contains(x*32, y*32));
-                window.Draw(m_tile[l][x][y].image);
+                    window.Draw(m_tile[l][x][y].image);
             }
         }
     }

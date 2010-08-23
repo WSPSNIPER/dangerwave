@@ -373,7 +373,7 @@
 	"Trig.h"
 	"LuaManager.h"
 
-1282450823 c:\users\user\dangerwave3\game\entity.h
+1282521587 c:\users\user\dangerwave3\game\entity.h
 	"LuaManager.h"
 	<iostream>
 	"ImageManager.h"
@@ -400,7 +400,7 @@
 	"SFML/Graphics.hpp"
 	"SFML/System.hpp"
 
-1282514003 c:\users\user\dangerwave3\game\trig.h
+1282526791 c:\users\user\dangerwave3\game\trig.h
 	<math.h>
 	"SFML/System.hpp"
 	"MyRect.h"
@@ -425,7 +425,7 @@
 	"EntityManager.h"
 	"LuaManager.h"
 
-1282282469 c:\users\user\dangerwave3\game\entitymanager.h
+1282524855 c:\users\user\dangerwave3\game\entitymanager.h
 	"Entity.h"
 	<vector>
 
@@ -447,7 +447,7 @@
 1282282468 c:\users\user\dangerwave3\game\state.h
 	"SFML/Graphics.hpp"
 
-1282515077 source:c:\users\user\dangerwave3\game\level.cpp
+1282523346 source:c:\users\user\dangerwave3\game\level.cpp
 	"Level.h"
 	<fstream>
 	"ImageManager.h"
@@ -457,7 +457,7 @@
 	<string>
 	<fstream>
 
-1282514276 c:\users\user\dangerwave3\game\player.h
+1282525001 c:\users\user\dangerwave3\game\player.h
 	"Trig.h"
 	"Entity.h"
 	"Animation.h"
@@ -469,7 +469,7 @@
 	"ImageManager.h"
 	<vector>
 
-1282514374 source:c:\users\user\dangerwave3\game\player.cpp
+1282525001 source:c:\users\user\dangerwave3\game\player.cpp
 	"Player.h"
 	<iostream>
 	"EntityManager.h"
@@ -484,11 +484,11 @@
 1282282467 source:c:\users\user\dangerwave3\game\state.cpp
 	"State.h"
 
-1282514783 source:c:\users\user\dangerwave3\game\swarmstate.cpp
+1282526853 source:c:\users\user\dangerwave3\game\swarmstate.cpp
 	"SwarmState.h"
 	"GameManager.h"
 
-1282509840 c:\users\user\dangerwave3\game\swarmstate.h
+1282526068 c:\users\user\dangerwave3\game\swarmstate.h
 	"State.h"
 	"Player.h"
 	"EntityManager.h"
@@ -496,6 +496,9 @@
 	"QuadTree.h"
 	"Level.h"
 	"Trig.h"
+	"Food.h"
+	"Enemy.h"
+	<time.h>
 
 1282413474 source:c:\users\user\dangerwave3\game\teststate.cpp
 	"TestState.h"
@@ -553,4 +556,20 @@
 	"ImageManager.h"
 	"EntityManager.h"
 	"GameManager.h"
+
+1282527266 source:c:\users\user\dangerwave3\game\enemy.cpp
+	"Enemy.h"
+
+1282527266 c:\users\user\dangerwave3\game\enemy.h
+	"Entity.h"
+	"EntityManager.h"
+	<random>
+
+1282525947 source:c:\users\user\dangerwave3\game\food.cpp
+	"Food.h"
+
+1282521819 c:\users\user\dangerwave3\game\food.h
+	"Entity.h"
+	"EntityManager.h"
+	"ImageManager.h"
 
