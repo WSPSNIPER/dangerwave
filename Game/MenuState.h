@@ -26,6 +26,7 @@ class MenuState : public State
         sf::Sprite _quitImage;
         sf::Sprite _startImage;
         sf::Sprite _arrow;
+        sf::Clock  _timer;
 
 
 };

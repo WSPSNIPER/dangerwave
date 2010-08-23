@@ -3,6 +3,8 @@
 Enemy::Enemy(int x, int y):
 cell::Entity(x, y, 32,32, "images/enemy.png")
 {
+
+    _collisionRect.set(x,y,32,32);
     _type = ENEMY;
     _rand.SetSeed(time(NULL));
 }
@@ -14,14 +16,17 @@ Enemy::~Enemy()
 void Enemy::OnCollision(int t)
 {
     if(t == BULLET)
-        Kill();
+        _alive = false;
 
 }
 
 void Enemy::Update()
 {
-
-    Move(_rand.Random(-3.f, 3.f), _rand.Random(-3.f, 3.f));
+    int x = _rand.Random(-3.f, 3.f);
+    int y = _rand.Random(-3.f, 3.f);
+    Move(x,y);
+    _collisionRect.x = x;
+    _collisionRect.y = y;
     if(GetPosition().x > 640)
         SetX(640);
     else if(GetPosition().x < 0)

@@ -14,7 +14,7 @@ SwarmState::SwarmState()
 :
 _scoreGoal(0),
 _score(0),
-_currentLevel(1),
+_currentLevel(0),
 _player(0),
 _level("maps/island2.map", "images/tiles.png"),
 _manager(EntityManager::GetInst()),
@@ -91,8 +91,9 @@ void SwarmState::SpawnWave(int amnt)
 
 void SwarmState::StartRound(int level)
 {
+    SpawnWave(2*(level+1)+5);
     SpawnFood(10);
-    SpawnWave(2*level);
+
     _timer.Reset();
 }
 

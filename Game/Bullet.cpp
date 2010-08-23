@@ -21,8 +21,9 @@ void Bullet::Update()
 
 void Bullet::OnCollision(int t)
 {
-    /*if(t != PLAYER)
-        Kill();*/
+    if(t != PLAYER)
+        Kill();
+
 }
 
 void Bullet::Render(sf::RenderWindow& window)
@@ -32,7 +33,9 @@ void Bullet::Render(sf::RenderWindow& window)
 
 
 Bullet::Bullet(float angle,float type,sf::Vector2f Speed,sf::Vector2f position, string owner)
+:cell::Entity(position.x, position.y, 10, 10, "images/bullet.png")
 {
+
     _collisionRect.set(position.x, position.y, 5, 5);
     Angle = angle; Type = type; _Speed = Speed; Position = position; Shooter = owner;
     _alive = true;
