@@ -1,0 +1,12 @@
+basically tells you who we are since i was too lazy to add in the read me but is applied we are the owners by the license 
+
+We are:
+
+Michael Redford:
+
+Level editor developer, level support, and sprites.
+
+Luke Fangel:
+
+Engine Developer, and sprites.
+
