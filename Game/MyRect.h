@@ -45,4 +45,16 @@ struct MyRect
     }
 };
 
+static inline bool IsCollision( MyRect A, MyRect B )
+{
+    if ( A.x < B.x + B.w &&
+    A.x + A.w > B.x &&
+    A.y < B.y + B.h &&
+    A.y + A.h > B.y )
+    {
+        return true;
+    }
+    return false;
+}
+
 #endif

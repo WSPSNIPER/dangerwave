@@ -4,6 +4,7 @@
 #include "Entity.h"
 #include "slope.hpp"
 #include <string>
+#include "Trig.h"
 using namespace std;
 class Bullet : public cell::Entity
 

@@ -7,6 +7,8 @@
 #include "bullet.hpp"
 #include "bulletmanager.hpp"
 #include "slope.hpp"
+#include "SFML/Audio.hpp"
+#include "SoundManager.h"
 /// @todo Create a Rect class to take care of Entity Collision
 const float PLAYER_SPEED = 5.f;
 class Player : public cell::Entity
@@ -33,8 +35,12 @@ class Player : public cell::Entity
         void IncrementScore() {_score++;}
         void SetScore(int s) { _score = s;}
 
-    private:
+        int GetKills() { return _kills; }
+        void AddKill() { _kills++; }
+        void SetKills(int k) { _kills = k; }
 
+    private:
+        int             _kills;
         int             _hp;
         cell::Animation _animation;
         std::string     _currentAnim;
@@ -43,6 +49,10 @@ class Player : public cell::Entity
         Slope           _slope;
         sf::Clock       _shotTimer;
         int             _score;
+        sf::Sound       _gunSound;
+        cell::SoundManager* _sounds;
+
+
 
 };
 

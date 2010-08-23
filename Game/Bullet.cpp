@@ -7,16 +7,19 @@ using namespace std;
 void Bullet::Move(float x, float y)
 {
     _sprite.Move(x , y);
-    _collisionRect.x += x;
-    _collisionRect.y += y;
+    _collisionRect.x = _sprite.GetPosition().x;
+    _collisionRect.y = _sprite.GetPosition().y;
 }
 
 void Bullet::Update()
 {
     Move(_Speed.x, _Speed.y);
 
-    if(_sprite.GetPosition().x > 10000 || _sprite.GetPosition().y > 10000)
+    if(_sprite.GetPosition().x > 10000 || _sprite.GetPosition().y > 10000 ||
+       _sprite.GetPosition().y < -10000 || _sprite.GetPosition().x < -10000)
         Kill();
+
+    cell::Entity::Update();
 }
 
 void Bullet::OnCollision(cell::Entity* e)
@@ -37,7 +40,6 @@ Bullet::Bullet(float angle,float type,sf::Vector2f Speed,sf::Vector2f position, 
 :cell::Entity(position.x, position.y, 10, 10, "images/bullet.png")
 {
 
-    _collisionRect.set(position.x, position.y, 5, 5);
     Angle = angle; Type = type; _Speed = Speed; Position = position; Shooter = owner;
     _alive = true;
     _type = BULLET;

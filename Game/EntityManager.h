@@ -46,4 +46,6 @@ class EntityManager
         std::vector<cell::Entity*> _entity;
 };
 
+extern void ExportEntityManager();
+
 #endif

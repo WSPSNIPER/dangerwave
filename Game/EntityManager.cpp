@@ -28,6 +28,7 @@ EntityManager& EntityManager::GetRef()
 
 EntityManager::EntityManager()
 {
+    ExportEntityManager();
 }
 
 EntityManager::~EntityManager()
@@ -78,6 +79,11 @@ void EntityManager::Update()
             --it;
         }
     }
+}
+
+void ExportEntityManager()
+{
+
 }
 
 
