@@ -18,6 +18,7 @@ _script(script)
     _animation.GetSprite().SetCenter(40, (120/4)/2);
     _hp = 100;
     _angle = 0.f;
+    _score = 0;
 }
 
 void Player::RotateToMouse()
@@ -76,13 +77,14 @@ void Player::Move(float off_x, float off_y)
 
 void Player::OnCollision(int t)
 {
-   /* if(t == BULLET)
+    if(t == ENEMY)
     {
-        SetHp(_hp - 20);
-    }*/
-    // wow not even midnight
-    // look into stopping player from moving when hittig somthig
-    //cell::LuaManager::GetInst()->DoFile(_script);
+        _hp -= 10;
+    }
+    else if(t == FOOD)
+    {
+        _score += 1;
+    }
 }
 
 void Player::Update()

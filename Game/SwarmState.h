@@ -8,7 +8,9 @@
 #include "QuadTree.h"
 #include "Level.h"
 #include "Trig.h"
-
+#include "Food.h"
+#include "Enemy.h"
+#include <time.h>
 using namespace cell;
 
 
@@ -22,6 +24,10 @@ using namespace cell;
 *** there are ( x ) amount of waves where the number of enemies increases by ( n )
 *** each wave and may get stronger
 **************************************************************************************************/
+#define MAX_LEVELS 10
+#define TIME_LIMIT 120
+#define IN_ROUND 1
+#define OUT_OF_ROUND 2
 
 class SwarmState : public State
 {
@@ -37,7 +43,26 @@ class SwarmState : public State
         void HandleEvents(GameManager*);
         void Render(GameManager*);
 
+        void SpawnWave(int amount);
+        void SpawnFood(int amount);
+
+        void StartRound(int level);
+        bool KilledAll();
+
+        void UpdateText();
+
     private:
+        int             _scoreGoal;
+        sf::String      _pressText;
+        sf::String      _timerText2;
+        sf::String      _scoreText2;
+        sf::String      _levelText2;
+        sf::String      _timerText;
+        sf::String      _scoreText;
+        sf::String      _levelText;
+        int             _score;
+        int             _currentLevel;
+        sf::Clock       _timer;
         Player*         _player;
         Level           _level;
         EntityManager*  _manager;

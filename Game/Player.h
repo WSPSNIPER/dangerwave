@@ -29,15 +29,19 @@ class Player : public cell::Entity
         void SetHp(int hp) { _hp = hp; }
         void ChangeHp(int c) { _hp += c; }
 
+        int GetScore() { return _score; }
+        void IncrementScore() {_score++;}
+
     private:
 
         int             _hp;
         cell::Animation _animation;
         std::string     _currentAnim;
         std::string     _script;
-        float _angle;
-        Slope _slope;
-        sf::Clock _shotTimer;
+        float           _angle;
+        Slope           _slope;
+        sf::Clock       _shotTimer;
+        int             _score;
 
 };
 

@@ -17,7 +17,8 @@ enum EntityType
     MAP_OBJECT = 0,
     BULLET,
     PLAYER,
-    ENEMY
+    ENEMY,
+    FOOD
 };
 namespace cell
 {

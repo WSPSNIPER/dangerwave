@@ -15,6 +15,15 @@ class EntityManager
         static EntityManager* GetInst();
         static EntityManager& GetRef();
 
+        void Clear() {
+            for(unsigned int i = 1; i < _entity.size(); i++)
+            {
+                if(_entity[i])
+                    delete _entity[i];
+                _entity.erase(_entity.begin()+1, _entity.end());
+            }
+        }
+
         void Render(sf::RenderWindow& window);
         void Update();
 
