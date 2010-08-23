@@ -565,13 +565,13 @@
 	"EntityManager.h"
 	"GameManager.h"
 
-1282583104 source:c:\users\user\dangerwave3\game\enemy.cpp
+1282596577 source:c:\users\user\dangerwave3\game\enemy.cpp
 	"Enemy.h"
 	"EntityManager.h"
 	"Entity.h"
 	"Trig.h"
 
-1282543504 c:\users\user\dangerwave3\game\enemy.h
+1282596678 c:\users\user\dangerwave3\game\enemy.h
 	"Entity.h"
 	"EntityManager.h"
 
@@ -583,7 +583,7 @@
 	"EntityManager.h"
 	"ImageManager.h"
 
-1282584174 source:c:\users\user\dangerwave3\game\failstate.cpp
+1282586041 source:c:\users\user\dangerwave3\game\failstate.cpp
 	"FailState.h"
 
 1282586005 c:\users\user\dangerwave3\game\failstate.h
