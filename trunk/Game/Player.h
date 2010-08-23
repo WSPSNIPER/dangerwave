@@ -51,6 +51,8 @@ class Player : public cell::Entity
         int             _score;
         sf::Sound       _gunSound;
         cell::SoundManager* _sounds;
+        sf::Clock          _hpTimer;
+        sf::Shape           _healthBar;
 
 
 

@@ -43,7 +43,7 @@ void QuadTree::Setup(Node* node, int levels)
 
 void QuadTree::CheckCollisions()
 {
-    /*for(unsigned int i = 0; i < collisionNodes.size(); i++)
+    for(unsigned int i = 0; i < collisionNodes.size(); i++)
     {
         for(unsigned int n = 0; n < collisionNodes[i]->entity.size(); n++)
         {
@@ -61,7 +61,7 @@ void QuadTree::CheckCollisions()
                 }
             }
         }
-    }*/
+    }/*
     EntityManager* mgr = EntityManager::GetInst();
     for(size_t i = 0; i < mgr->GetVector().size(); i++)
     {
@@ -78,11 +78,11 @@ void QuadTree::CheckCollisions()
                 }
             }
         }
-    }
+    }*/
 }
 
 void QuadTree::Update(EntityManager* mgr)
-{/*
+{
 
     for(unsigned int i = 0; i < leafNodes.size(); i++)
     {
@@ -95,7 +95,7 @@ void QuadTree::Update(EntityManager* mgr)
     {
         FindCell(m_node, *mgr->GetEntity(i));
     }
-*/
+
 }
 
 void QuadTree::FindCell(Node* node, cell::Entity& entity)
