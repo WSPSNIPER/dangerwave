@@ -21,9 +21,6 @@
 					<Add option="-lsfml-window-s" />
 					<Add option="-lsfml-system-s" />
 					<Add option="-lsfml-audio-s" />
-					<Add option="-llua" />
-					<Add option="-lluabind" />
-					<Add option="-lcell-engine" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -41,29 +38,30 @@
 					<Add option="-lsfml-window-s" />
 					<Add option="-lsfml-system-s" />
 					<Add option="-lsfml-audio-s" />
-					<Add option="-llua" />
-					<Add option="-lluabind" />
-					<Add option="-lcell-engine" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="C:\Program Files\CodeBlocks\SFML\SFML-1.6\include" />
+			<Add directory="..\include\Luabind" />
+			<Add directory="..\include\boost" />
+			<Add directory="..\include" />
+			<Add directory="..\include\Lua" />
 		</Compiler>
 		<Linker>
 			<Add option="-lsfml-system-s" />
 			<Add option="-lsfml-window-s" />
 			<Add option="-lsfml-graphics-s" />
 			<Add option="-lsfml-audio-s" />
-			<Add option="-llua" />
-			<Add option="-lluabind" />
-			<Add option="-lcell-engine" />
 			<Add library="mingw32" />
 			<Add library="user32" />
 			<Add library="gdi32" />
 			<Add library="winmm" />
 			<Add library="dxguid" />
+			<Add library="..\lib\libcell-engine.a" />
+			<Add library="..\lib\libLua.a" />
+			<Add library="..\lib\libluabind.a" />
 			<Add directory="C:\Program Files\CodeBlocks\SFML\SFML-1.6\lib" />
 		</Linker>
 		<Unit filename="AI.cpp" />
@@ -126,6 +124,7 @@
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
