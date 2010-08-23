@@ -2,12 +2,13 @@
 #define ENEMY_H
 
 #include "Entity.h"
+#include "Trig.h"
 #include "EntityManager.h"
 extern int amount;
 class Enemy : public cell::Entity
 {
     public:
-        Enemy(int x, int y, std::string image = "images/enemy.png");
+        Enemy(int x, int y, float speed = 2.f);
         ~Enemy();
         virtual void OnCollision(cell::Entity* e);
         virtual void Update();
@@ -16,6 +17,7 @@ class Enemy : public cell::Entity
         void RunAI();
     private:
     sf::Randomizer _rand;
+    float _speed;
 };
 extern void ExportEnemy();
 #endif // ENEMY_H
