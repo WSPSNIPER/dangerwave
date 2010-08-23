@@ -106,14 +106,14 @@ void SwarmState::SpawnWave(int amnt)
 {
     for(int i = 0; i < amnt; i++)
     {
-        _manager->Add(new Enemy(_rand.Random(40, (_level.GetWidth()*32) - 50), _rand.Random(40, (_level.GetHeight()*32)- 50)));
+        _manager->Add(new Enemy(_rand.Random(40, (_level.GetWidth()*32) - 50), _rand.Random(40, (_level.GetHeight()*32)- 50), _rand.Random(1.f, 3.5f)));
     }
 }
 
 void SwarmState::StartRound(int level)
 {
 
-    SpawnWave(50);
+    SpawnWave(40);
     SpawnFood(20);
     amount = 12;
 
@@ -179,7 +179,7 @@ void SwarmState::UpdateText()
     }
     if(_spawnTimer.GetElapsedTime() >= 20.f)
     {
-        SpawnWave(30);
+        SpawnWave(22);
         SpawnFood(30);
         _spawnTimer.Reset();
     }

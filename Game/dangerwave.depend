@@ -400,7 +400,7 @@
 	"SFML/Graphics.hpp"
 	"SFML/System.hpp"
 
-1282580579 c:\users\user\dangerwave3\game\trig.h
+1282599320 c:\users\user\dangerwave3\game\trig.h
 	<math.h>
 	"SFML/System.hpp"
 	"MyRect.h"
@@ -565,14 +565,15 @@
 	"EntityManager.h"
 	"GameManager.h"
 
-1282596577 source:c:\users\user\dangerwave3\game\enemy.cpp
+1282599069 source:c:\users\user\dangerwave3\game\enemy.cpp
 	"Enemy.h"
 	"EntityManager.h"
 	"Entity.h"
 	"Trig.h"
 
-1282596678 c:\users\user\dangerwave3\game\enemy.h
+1282599069 c:\users\user\dangerwave3\game\enemy.h
 	"Entity.h"
+	"Trig.h"
 	"EntityManager.h"
 
 1282532563 source:c:\users\user\dangerwave3\game\food.cpp

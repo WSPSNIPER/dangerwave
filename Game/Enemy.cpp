@@ -9,13 +9,14 @@ void ExportEntity()
 
 int amount = 0;
 
-Enemy::Enemy(int x, int y, std::string image):
-cell::Entity(x, y, 32,32, image)
+Enemy::Enemy(int x, int y, float speed):
+cell::Entity(x, y, 32,32, "images/enemy.png")
 {
     SetPosition(x, y);
     _collisionRect.set(x,y,30,30);
     _type = ENEMY;
     _alive = true;
+    _speed = speed;
 
 
 }
@@ -54,7 +55,7 @@ void Enemy::RunAI()
 {
     Entity* player = EntityManager::GetInst()->GetEntity(0);
     sf::Vector2f other(player->GetX(), player->GetY());
-    sf::Vector2f vel = cell::Vect::GetPlayerPath(other, _playerPos);
+    sf::Vector2f vel = cell::Vect::GetPlayerPath(other, _playerPos, _speed);
 
     Move(-vel.x, -vel.y);
 

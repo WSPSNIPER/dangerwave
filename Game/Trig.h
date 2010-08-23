@@ -52,16 +52,16 @@ namespace cell
             return ((atan2f(vector2.x - vector1.x, vector2.y - vector1.y) * 180 / 3.14593)+180);
         }
 
-        inline static sf::Vector2f GetBulletPath(sf::Vector2f& vec1, sf::Vector2f& vec2)
+        inline static sf::Vector2f GetBulletPath(sf::Vector2f& vec1, sf::Vector2f& vec2, float o = 7.f)
         {
             float length = GetLength(vec1, vec2);
-            return sf::Vector2f((vec2.x/length)*7-(vec1.x/length)*7, (vec2.y/length)*7-(vec1.y/length)*7);
+            return sf::Vector2f((vec2.x/length)*o-(vec1.x/length)*o, (vec2.y/length)*o-(vec1.y/length)*o);
         }
 
-        inline static sf::Vector2f GetPlayerPath(sf::Vector2f& vec1, sf::Vector2f& vec2)
+        inline static sf::Vector2f GetPlayerPath(sf::Vector2f& vec1, sf::Vector2f& vec2, float o = 2.f)
         {
             float length = GetLength(vec1, vec2);
-            return sf::Vector2f((vec2.x/length)*2-(vec1.x/length)*2, (vec2.y/length)*2-(vec1.y/length)*2);
+            return sf::Vector2f((vec2.x/length)*o-(vec1.x/length)*o, (vec2.y/length)*o-(vec1.y/length)*o);
         }
 
 

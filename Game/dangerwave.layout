@@ -10,11 +10,11 @@
 	<File name="Bullet.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="541" topLine="12" />
 	</File>
-	<File name="Enemy.cpp" open="0" top="0" tabpos="8">
-		<Cursor position="501" topLine="22" />
+	<File name="Enemy.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="164" topLine="0" />
 	</File>
-	<File name="Enemy.h" open="0" top="0" tabpos="8">
-		<Cursor position="91" topLine="0" />
+	<File name="Enemy.h" open="1" top="0" tabpos="6">
+		<Cursor position="295" topLine="0" />
 	</File>
 	<File name="EntityManager.cpp" open="0" top="0" tabpos="1">
 		<Cursor position="1640" topLine="67" />
@@ -22,7 +22,7 @@
 	<File name="EntityManager.h" open="0" top="0" tabpos="10">
 		<Cursor position="1379" topLine="29" />
 	</File>
-	<File name="FailState.cpp" open="1" top="1" tabpos="4">
+	<File name="FailState.cpp" open="1" top="0" tabpos="4">
 		<Cursor position="1846" topLine="72" />
 	</File>
 	<File name="FailState.h" open="1" top="0" tabpos="5">
@@ -55,11 +55,11 @@
 	<File name="MyRect.h" open="0" top="0" tabpos="0">
 		<Cursor position="1322" topLine="35" />
 	</File>
-	<File name="Player.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="1445" topLine="54" />
+	<File name="Player.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="982" topLine="26" />
 	</File>
-	<File name="Player.h" open="0" top="0" tabpos="5">
-		<Cursor position="1402" topLine="25" />
+	<File name="Player.h" open="1" top="0" tabpos="8">
+		<Cursor position="1402" topLine="13" />
 	</File>
 	<File name="QuadTree.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="1184" topLine="114" />
@@ -71,7 +71,7 @@
 		<Cursor position="603" topLine="3" />
 	</File>
 	<File name="SwarmState.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="3458" topLine="137" />
+		<Cursor position="3458" topLine="139" />
 	</File>
 	<File name="SwarmState.h" open="1" top="0" tabpos="2">
 		<Cursor position="1482" topLine="62" />
