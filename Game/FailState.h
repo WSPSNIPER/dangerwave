@@ -4,7 +4,7 @@
 #include "GameManager.h"
 #include "State.h"
 #include "ImageManager.h"
-
+#include "GameManager.h"
 using namespace cell;
 
 class FailState :public State
@@ -22,6 +22,10 @@ class FailState :public State
         void HandleEvents(GameManager*);
     private:
         sf::Sprite _failImage;
+        sf::String _scoreString;
+        sf::String _message;
+        sf::Randomizer _rand;
+        sf::Clock       _flicker;
 };
 
 #endif // FAILSTATE_H

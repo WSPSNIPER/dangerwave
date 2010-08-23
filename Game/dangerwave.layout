@@ -7,35 +7,41 @@
 	<File name="AI.h" open="0" top="0" tabpos="15">
 		<Cursor position="816" topLine="12" />
 	</File>
-	<File name="Bullet.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="516" topLine="8" />
+	<File name="Bullet.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="541" topLine="12" />
 	</File>
 	<File name="Enemy.cpp" open="0" top="0" tabpos="8">
-		<Cursor position="347" topLine="8" />
+		<Cursor position="501" topLine="22" />
 	</File>
 	<File name="Enemy.h" open="0" top="0" tabpos="8">
-		<Cursor position="282" topLine="0" />
+		<Cursor position="91" topLine="0" />
 	</File>
-	<File name="EntityManager.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="51" topLine="0" />
+	<File name="EntityManager.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="1640" topLine="67" />
 	</File>
 	<File name="EntityManager.h" open="0" top="0" tabpos="10">
-		<Cursor position="682" topLine="22" />
+		<Cursor position="1379" topLine="29" />
 	</File>
-	<File name="Food.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="405" topLine="8" />
+	<File name="FailState.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="1846" topLine="72" />
+	</File>
+	<File name="FailState.h" open="1" top="0" tabpos="5">
+		<Cursor position="674" topLine="5" />
+	</File>
+	<File name="Food.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="412" topLine="8" />
 	</File>
 	<File name="Food.h" open="0" top="0" tabpos="14">
 		<Cursor position="335" topLine="0" />
 	</File>
 	<File name="GameManager.cpp" open="0" top="0" tabpos="13">
-		<Cursor position="454" topLine="1" />
+		<Cursor position="42" topLine="0" />
 	</File>
 	<File name="GameManager.h" open="0" top="0" tabpos="3">
-		<Cursor position="567" topLine="5" />
+		<Cursor position="163" topLine="5" />
 	</File>
 	<File name="Level.cpp" open="0" top="0" tabpos="11">
-		<Cursor position="3570" topLine="124" />
+		<Cursor position="3475" topLine="124" />
 	</File>
 	<File name="Level.h" open="0" top="0" tabpos="10">
 		<Cursor position="1096" topLine="27" />
@@ -47,37 +53,37 @@
 		<Cursor position="739" topLine="8" />
 	</File>
 	<File name="MyRect.h" open="0" top="0" tabpos="0">
-		<Cursor position="44" topLine="0" />
+		<Cursor position="1322" topLine="35" />
 	</File>
-	<File name="Player.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="2016" topLine="69" />
+	<File name="Player.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="1445" topLine="54" />
 	</File>
-	<File name="Player.h" open="1" top="1" tabpos="7">
-		<Cursor position="345" topLine="0" />
+	<File name="Player.h" open="0" top="0" tabpos="5">
+		<Cursor position="1402" topLine="25" />
 	</File>
-	<File name="QuadTree.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="1578" topLine="45" />
+	<File name="QuadTree.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="1184" topLine="114" />
 	</File>
-	<File name="QuadTree.h" open="0" top="0" tabpos="13">
-		<Cursor position="1795" topLine="52" />
+	<File name="QuadTree.h" open="0" top="0" tabpos="2">
+		<Cursor position="1015" topLine="37" />
 	</File>
 	<File name="State.h" open="0" top="0" tabpos="11">
-		<Cursor position="515" topLine="3" />
+		<Cursor position="603" topLine="3" />
 	</File>
-	<File name="SwarmState.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="2323" topLine="89" />
+	<File name="SwarmState.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="3458" topLine="137" />
 	</File>
-	<File name="SwarmState.h" open="0" top="0" tabpos="1">
-		<Cursor position="2024" topLine="53" />
+	<File name="SwarmState.h" open="1" top="0" tabpos="2">
+		<Cursor position="1482" topLine="62" />
 	</File>
 	<File name="TestState.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="1574" topLine="9" />
+		<Cursor position="514" topLine="0" />
 	</File>
 	<File name="TestState.h" open="0" top="0" tabpos="9">
 		<Cursor position="789" topLine="16" />
 	</File>
 	<File name="bullet.hpp" open="0" top="0" tabpos="6">
-		<Cursor position="474" topLine="20" />
+		<Cursor position="117" topLine="0" />
 	</File>
 	<File name="bulletmanager.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="856" topLine="34" />

@@ -1,6 +1,6 @@
 #include "GameManager.h"
 
-
+int score = 0;
 GameManager::GameManager(int width, int height, int bpp, std::string title)
 :
 sf::RenderWindow(sf::VideoMode(width, height, bpp), title)

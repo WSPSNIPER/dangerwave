@@ -15,6 +15,8 @@ cell::Entity(x, y, 32,32, "images/enemy.png")
     SetPosition(x, y);
     _collisionRect.set(x,y,30,30);
     _type = ENEMY;
+    _alive = true;
+
 
 }
 
@@ -29,6 +31,7 @@ void Enemy::OnCollision(cell::Entity* e)
         Kill();
         e->Kill();
         amount--;
+        //EntityManager::GetInst()->Add(new Enemy((int)rand() % 40*32, (int)rand() % 40*32));
     }
 
 }

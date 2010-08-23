@@ -20,6 +20,7 @@
 					<Add option="-lsfml-graphics-s" />
 					<Add option="-lsfml-window-s" />
 					<Add option="-lsfml-system-s" />
+					<Add option="-lsfml-audio-s" />
 					<Add option="-llua" />
 					<Add option="-lluabind" />
 					<Add option="-lcell-engine" />
@@ -39,6 +40,7 @@
 					<Add option="-lsfml-graphics-s" />
 					<Add option="-lsfml-window-s" />
 					<Add option="-lsfml-system-s" />
+					<Add option="-lsfml-audio-s" />
 					<Add option="-llua" />
 					<Add option="-lluabind" />
 					<Add option="-lcell-engine" />
@@ -53,6 +55,7 @@
 			<Add option="-lsfml-system-s" />
 			<Add option="-lsfml-window-s" />
 			<Add option="-lsfml-graphics-s" />
+			<Add option="-lsfml-audio-s" />
 			<Add option="-llua" />
 			<Add option="-lluabind" />
 			<Add option="-lcell-engine" />
@@ -70,6 +73,12 @@
 		<Unit filename="Enemy.h" />
 		<Unit filename="EntityManager.cpp" />
 		<Unit filename="EntityManager.h" />
+		<Unit filename="FailState.cpp">
+			<Option virtualFolder="GameStatesSrc\" />
+		</Unit>
+		<Unit filename="FailState.h">
+			<Option virtualFolder="GameStates\" />
+		</Unit>
 		<Unit filename="Food.cpp" />
 		<Unit filename="Food.h" />
 		<Unit filename="GameManager.cpp" />
