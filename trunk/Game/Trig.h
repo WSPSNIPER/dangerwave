@@ -61,7 +61,7 @@ namespace cell
         inline static sf::Vector2f GetPlayerPath(sf::Vector2f& vec1, sf::Vector2f& vec2)
         {
             float length = GetLength(vec1, vec2);
-            return sf::Vector2f((vec2.x/length)-(vec1.x/length), (vec2.y/length)-(vec1.y/length));
+            return sf::Vector2f((vec2.x/length)*2-(vec1.x/length)*2, (vec2.y/length)*2-(vec1.y/length)*2);
         }
 
 

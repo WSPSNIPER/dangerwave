@@ -5,13 +5,14 @@
 using namespace cell;
 
 const float RATE_OF_FIRE = 0.5f;
-Player::Player(float setX, float setY, std::string setName, std::string script)
+Player::Player(float setX, float setY, sf::View* view, std::string setName, std::string script)
 :
 cell::Entity(setX, setY, 32, 32, setName),
 _animation(_sprite, 80, 120/4, 4, VERTICAL),
 _script(script),
 _kills(0),
-_sounds(cell::SoundManager::GetInst())
+_sounds(cell::SoundManager::GetInst()),
+_view(view)
 {
     _alive = true;
     _type = PLAYER;
@@ -48,7 +49,7 @@ void Player::Shoot()
 }
 void Player::HandleInput(const sf::Input &input)
 {
-    if(input.IsKeyDown(sf::Key::Space))
+    if(input.IsMouseButtonDown(sf::Mouse::Left))
     {
         if(_shotTimer.GetElapsedTime() >= RATE_OF_FIRE)
         {
@@ -79,6 +80,7 @@ void Player::Move(float off_x, float off_y)
 {
     _animation.GetSprite().Move(off_x, off_y);
     Entity::Move(off_x, off_y);
+    _view->Move(off_x, off_y);
 }
 
 void Player::OnCollision(cell::Entity* e)
@@ -88,40 +90,41 @@ void Player::OnCollision(cell::Entity* e)
     {
         if(_hpTimer.GetElapsedTime() >= 0.07f){
             _hp--;
-
-            if(_hp > 50)
-                _healthBar = sf::Shape::Rectangle(520, 20, 520+_hp, 40, sf::Color(20, 230, 60));
-            else
-                _healthBar = sf::Shape::Rectangle(520, 20, 520+_hp, 40, sf::Color(230, 20, 60));
             _hpTimer.Reset();
         }
     }
     else if(e->GetType() == FOOD)
     {
-        _score += 1;
+        _hp += 10;
+        if(_hp > 100)
+            _hp = 100;
         std::cout << "score up" << std::endl;
     }
 }
 
 void Player::Update()
 {
-    _mousePos.x = _state->mouseX;
-    _mousePos.y = _state->mouseY;
     _playerPos = _animation.GetSprite().GetPosition();
+
+
 
     if(_hp <= 0)
         Kill();
 
-    RotateToMouse();
+
 }
 
 
 void Player::Render(sf::RenderWindow& window)
 {
+    _mousePos = window.ConvertCoords(_state->mouseX, _state->mouseY, _view);
+    RotateToMouse();
+   // sf::Vector2f p = window.ConvertCoords(520, 40, _view);
+   // _healthBar.SetPosition(p.x, p.y);
     HandleInput(window.GetInput());
     _animation.PlayAnimation(window);
 
-    window.Draw(_healthBar);
+   // window.Draw(_healthBar);
 }
 
 void ExportPlayer(Player* player)

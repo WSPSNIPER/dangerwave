@@ -400,7 +400,7 @@
 	"SFML/Graphics.hpp"
 	"SFML/System.hpp"
 
-1282545398 c:\users\user\dangerwave3\game\trig.h
+1282580579 c:\users\user\dangerwave3\game\trig.h
 	<math.h>
 	"SFML/System.hpp"
 	"MyRect.h"
@@ -430,10 +430,10 @@
 	"Entity.h"
 	<vector>
 
-1282282467 source:c:\users\user\dangerwave3\game\gamemanager.cpp
+1282583424 source:c:\users\user\dangerwave3\game\gamemanager.cpp
 	"GameManager.h"
 
-1282282467 c:\users\user\dangerwave3\game\gamemanager.h
+1282583424 c:\users\user\dangerwave3\game\gamemanager.h
 	"EntityManager.h"
 	"QuadTree.h"
 	"State.h"
@@ -448,7 +448,7 @@
 1282549537 c:\users\user\dangerwave3\game\state.h
 	"SFML/Graphics.hpp"
 
-1282523346 source:c:\users\user\dangerwave3\game\level.cpp
+1282577996 source:c:\users\user\dangerwave3\game\level.cpp
 	"Level.h"
 	<fstream>
 	"ImageManager.h"
@@ -458,7 +458,7 @@
 	<string>
 	<fstream>
 
-1282551157 c:\users\user\dangerwave3\game\player.h
+1282579258 c:\users\user\dangerwave3\game\player.h
 	"Trig.h"
 	"Entity.h"
 	"Animation.h"
@@ -473,7 +473,7 @@
 	"ImageManager.h"
 	<vector>
 
-1282551359 source:c:\users\user\dangerwave3\game\player.cpp
+1282585031 source:c:\users\user\dangerwave3\game\player.cpp
 	"Player.h"
 	<iostream>
 	"EntityManager.h"
@@ -489,12 +489,13 @@
 1282282467 source:c:\users\user\dangerwave3\game\state.cpp
 	"State.h"
 
-1282551469 source:c:\users\user\dangerwave3\game\swarmstate.cpp
+1282585031 source:c:\users\user\dangerwave3\game\swarmstate.cpp
 	"SwarmState.h"
 	"GameManager.h"
 	"FailState.h"
+	"Trig.h"
 
-1282551714 c:\users\user\dangerwave3\game\swarmstate.h
+1282584359 c:\users\user\dangerwave3\game\swarmstate.h
 	"State.h"
 	"Player.h"
 	"EntityManager.h"
@@ -507,7 +508,7 @@
 	<time.h>
 	"bulletmanager.hpp"
 
-1282413474 source:c:\users\user\dangerwave3\game\teststate.cpp
+1282576705 source:c:\users\user\dangerwave3\game\teststate.cpp
 	"TestState.h"
 
 1282411706 c:\users\user\dangerwave3\game\teststate.h
@@ -564,7 +565,7 @@
 	"EntityManager.h"
 	"GameManager.h"
 
-1282548677 source:c:\users\user\dangerwave3\game\enemy.cpp
+1282583104 source:c:\users\user\dangerwave3\game\enemy.cpp
 	"Enemy.h"
 	"EntityManager.h"
 	"Entity.h"
@@ -582,13 +583,14 @@
 	"EntityManager.h"
 	"ImageManager.h"
 
-1282543647 source:c:\users\user\dangerwave3\game\failstate.cpp
+1282584174 source:c:\users\user\dangerwave3\game\failstate.cpp
 	"FailState.h"
 
-1282543704 c:\users\user\dangerwave3\game\failstate.h
+1282586005 c:\users\user\dangerwave3\game\failstate.h
 	"GameManager.h"
 	"State.h"
 	"ImageManager.h"
+	"GameManager.h"
 
 1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\audio.hpp
 	<SFML/System.hpp>

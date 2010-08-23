@@ -6,6 +6,7 @@
 #include "State.h"
 #include <string>
 
+extern int score;
 class GameManager : public sf::RenderWindow
 {
     public:

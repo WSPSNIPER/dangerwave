@@ -48,6 +48,7 @@ class SwarmState : public State
 
         void SpawnWave(int amount);
         void SpawnFood(int amount);
+        void UpdateMsg();
 
         void StartRound(int level);
         bool KilledAll();
@@ -76,6 +77,9 @@ class SwarmState : public State
         sf::Randomizer  _rand;
         sf::View        _view;
         sf::Clock       _spawnTimer;
+        sf::Shape       _health;
+        sf::Clock       _scoreTimer;
+        sf::String      _message;
         /// @TODO finish this state
 
 

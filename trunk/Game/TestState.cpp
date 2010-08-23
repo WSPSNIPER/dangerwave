@@ -19,8 +19,8 @@ _level("hella blocks.map", "tiles.png"),
 t(2, _level.GetWidth(), _level.GetHeight())
 
 {
-
-    _entityManager->Add(new Player(100, 100, "player.png"));
+    sf::View temp;
+    _entityManager->Add(new Player(100, 100, &temp, "player.png"));
     _entityManager->Add(new cell::Entity(110, 110, 80, 120, "player.png"));
     _entityManager->Add(new cell::Entity(450, 100, 80, 120, "player.png"));
     //ExportPlayer(&_player); // export the player to lua
