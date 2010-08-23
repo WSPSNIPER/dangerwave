@@ -1,12 +1,21 @@
 #include "Enemy.h"
+#include "EntityManager.h"
+#include "Entity.h"
+#include "Trig.h"
+void ExportEntity()
+{
+
+}
+
+int amount = 0;
 
 Enemy::Enemy(int x, int y):
 cell::Entity(x, y, 32,32, "images/enemy.png")
 {
-
-    _collisionRect.set(x,y,32,32);
+    SetPosition(x, y);
+    _collisionRect.set(x,y,30,30);
     _type = ENEMY;
-    _rand.SetSeed(time(NULL));
+
 }
 
 Enemy::~Enemy()
@@ -19,23 +28,34 @@ void Enemy::OnCollision(cell::Entity* e)
     {
         Kill();
         e->Kill();
+        amount--;
     }
 
 }
 
+void Enemy::Render(sf::RenderWindow& window)
+{
+    window.Draw(_sprite);
+}
+
 void Enemy::Update()
 {
-    int x = _rand.Random(-3.f, 3.f);
-    int y = _rand.Random(-3.f, 3.f);
-    Move(x,y);
-    _collisionRect.x = x;
-    _collisionRect.y = y;
-    if(GetPosition().x > 640)
-        SetX(640);
-    else if(GetPosition().x < 0)
-        SetX(0);
-    if(GetPosition().y > 480)
-        SetX(480);
-    else if(GetPosition().y < 0)
-        SetX(0);
+    _playerPos = _sprite.GetPosition();
+    RunAI();
+    cell::Entity::Update();
+    _collisionRect.x = _playerPos.x;
+    _collisionRect.y = _playerPos.y;
 }
+
+void Enemy::RunAI()
+{
+    Entity* player = EntityManager::GetInst()->GetEntity(0);
+    sf::Vector2f other(player->GetX(), player->GetY());
+    sf::Vector2f vel = cell::Vect::GetPlayerPath(other, _playerPos);
+
+    Move(-vel.x, -vel.y);
+
+}
+
+
+

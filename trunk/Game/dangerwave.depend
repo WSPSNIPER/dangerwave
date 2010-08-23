@@ -400,32 +400,33 @@
 	"SFML/Graphics.hpp"
 	"SFML/System.hpp"
 
-1282526791 c:\users\user\dangerwave3\game\trig.h
+1282545398 c:\users\user\dangerwave3\game\trig.h
 	<math.h>
 	"SFML/System.hpp"
 	"MyRect.h"
 
-1282287198 c:\users\user\dangerwave3\game\myrect.h
+1282547306 c:\users\user\dangerwave3\game\myrect.h
 
-1282536416 source:c:\users\user\dangerwave3\game\bullet.cpp
+1282548370 source:c:\users\user\dangerwave3\game\bullet.cpp
 	"Entity.h"
 	"SFML/System.hpp"
 	"string"
 	"bullet.hpp"
 
-1282532277 c:\users\user\dangerwave3\game\bullet.hpp
+1282545398 c:\users\user\dangerwave3\game\bullet.hpp
 	"Entity.h"
 	"slope.hpp"
 	<string>
+	"Trig.h"
 
 1282453005 c:\users\user\dangerwave3\game\slope.hpp
 	"Entity.h"
 
-1282449855 source:c:\users\user\dangerwave3\game\entitymanager.cpp
+1282541257 source:c:\users\user\dangerwave3\game\entitymanager.cpp
 	"EntityManager.h"
 	"LuaManager.h"
 
-1282535810 c:\users\user\dangerwave3\game\entitymanager.h
+1282540038 c:\users\user\dangerwave3\game\entitymanager.h
 	"Entity.h"
 	<vector>
 
@@ -444,7 +445,7 @@
 	<vector>
 	"MyRect.h"
 
-1282282468 c:\users\user\dangerwave3\game\state.h
+1282549537 c:\users\user\dangerwave3\game\state.h
 	"SFML/Graphics.hpp"
 
 1282523346 source:c:\users\user\dangerwave3\game\level.cpp
@@ -457,7 +458,7 @@
 	<string>
 	<fstream>
 
-1282537318 c:\users\user\dangerwave3\game\player.h
+1282549897 c:\users\user\dangerwave3\game\player.h
 	"Trig.h"
 	"Entity.h"
 	"Animation.h"
@@ -465,18 +466,20 @@
 	"bullet.hpp"
 	"bulletmanager.hpp"
 	"slope.hpp"
+	"SFML/Audio.hpp"
+	"SoundManager.h"
 
 1282282467 c:\users\user\dangerwave3\game\animation.h
 	"ImageManager.h"
 	<vector>
 
-1282536638 source:c:\users\user\dangerwave3\game\player.cpp
+1282549897 source:c:\users\user\dangerwave3\game\player.cpp
 	"Player.h"
 	<iostream>
 	"EntityManager.h"
 	"slope.hpp"
 
-1282537062 source:c:\users\user\dangerwave3\game\quadtree.cpp
+1282547952 source:c:\users\user\dangerwave3\game\quadtree.cpp
 	"QuadTree.h"
 	<fstream>
 	<iostream>
@@ -486,11 +489,12 @@
 1282282467 source:c:\users\user\dangerwave3\game\state.cpp
 	"State.h"
 
-1282537043 source:c:\users\user\dangerwave3\game\swarmstate.cpp
+1282548467 source:c:\users\user\dangerwave3\game\swarmstate.cpp
 	"SwarmState.h"
 	"GameManager.h"
+	"FailState.h"
 
-1282534410 c:\users\user\dangerwave3\game\swarmstate.h
+1282550130 c:\users\user\dangerwave3\game\swarmstate.h
 	"State.h"
 	"Player.h"
 	"EntityManager.h"
@@ -560,13 +564,15 @@
 	"EntityManager.h"
 	"GameManager.h"
 
-1282532482 source:c:\users\user\dangerwave3\game\enemy.cpp
+1282548677 source:c:\users\user\dangerwave3\game\enemy.cpp
 	"Enemy.h"
+	"EntityManager.h"
+	"Entity.h"
+	"Trig.h"
 
-1282536110 c:\users\user\dangerwave3\game\enemy.h
+1282543504 c:\users\user\dangerwave3\game\enemy.h
 	"Entity.h"
 	"EntityManager.h"
-	<random>
 
 1282532563 source:c:\users\user\dangerwave3\game\food.cpp
 	"Food.h"
@@ -575,4 +581,67 @@
 	"Entity.h"
 	"EntityManager.h"
 	"ImageManager.h"
+
+1282543647 source:c:\users\user\dangerwave3\game\failstate.cpp
+	"FailState.h"
+
+1282543704 c:\users\user\dangerwave3\game\failstate.h
+	"GameManager.h"
+	"State.h"
+	"ImageManager.h"
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundStream.hpp>
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\audio\listener.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Vector3.hpp>
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\audio\music.hpp
+	<SFML/Audio/SoundStream.hpp>
+	<string>
+	<vector>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\audio\soundstream.hpp
+	<SFML/Audio/Sound.hpp>
+	<SFML/System/Thread.hpp>
+	<cstdlib>
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\audio\sound.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/AudioResource.hpp>
+	<cstdlib>
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\audio\audioresource.hpp
+	<SFML/Config.hpp>
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\audio\soundbuffer.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Audio/AudioResource.hpp>
+	<string>
+	<vector>
+	<set>
+
+1275877208 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\audio\soundbufferrecorder.hpp
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+
+1275877209 c:\program files\codeblocks\sfml\sfml-1.6\include\sfml\audio\soundrecorder.hpp
+	<SFML/System/Thread.hpp>
+	<vector>
+
+1282282468 c:\users\user\dangerwave3\game\soundmanager.h
+	"SFML/Audio.hpp"
+	"SFML/System.hpp"
+	<string>
+	<map>
 

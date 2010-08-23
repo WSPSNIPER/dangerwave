@@ -29,6 +29,8 @@ using namespace cell;
 #define TIME_LIMIT 120
 #define IN_ROUND 1
 #define OUT_OF_ROUND 2
+#define PASS 1
+#define FAIL 2 /// should have used an enum lol
 
 class SwarmState : public State
 {
@@ -70,6 +72,11 @@ class SwarmState : public State
         BulletManager*  _bullets;
         ImageManager*   _images;
         QuadTree        _tree;
+        int             _enemyCount;
+        sf::Music       _music;
+        sf::Randomizer  _rand;
+        sf::View        _view;
+        sf::Clock       _spawnTimer;
         /// @TODO finish this state
 
 

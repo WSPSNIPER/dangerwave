@@ -9,7 +9,9 @@ Player::Player(float setX, float setY, std::string setName, std::string script)
 :
 cell::Entity(setX, setY, 32, 32, setName),
 _animation(_sprite, 80, 120/4, 4, VERTICAL),
-_script(script)
+_script(script),
+_kills(0),
+_sounds(cell::SoundManager::GetInst())
 {
     _alive = true;
     _type = PLAYER;
@@ -19,6 +21,8 @@ _script(script)
     _hp = 100;
     _angle = 0.f;
     _score = 0;
+    _gunSound.SetBuffer(_sounds->GetBuffer("sounds/gun.wav"));
+    _gunSound.SetVolume(20.f);
 }
 
 void Player::RotateToMouse()
@@ -39,6 +43,7 @@ void Player::Shoot()
     /// @todo fix the bullet dir
     EntityManager::GetInst()->Add(new Bullet(_angle, 0, Vect::GetBulletPath(_playerPos, _mousePos),
                                              _playerPos, "player"));
+    _gunSound.Play();
 }
 void Player::HandleInput(const sf::Input &input)
 {
@@ -79,7 +84,7 @@ void Player::OnCollision(cell::Entity* e)
 {
     if(e->GetType() == ENEMY)
     {
-        _hp -= 10;
+        _hp--;
     }
     else if(e->GetType() == FOOD)
     {

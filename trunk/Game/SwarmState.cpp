@@ -1,6 +1,8 @@
 #include "SwarmState.h"
 #include "GameManager.h"
+#include "FailState.h"
 int state = OUT_OF_ROUND;
+int status = PASS;
 SwarmState* SwarmState::_instance = NULL;
 
 SwarmState* SwarmState::GetInst()
@@ -19,13 +21,14 @@ _player(0),
 _level("maps/island2.map", "images/tiles.png"),
 _manager(EntityManager::GetInst()),
 _images(ImageManager::GetInst()),
-_tree(2, 640, 480),
-_bullets(BulletManager::GetInst())
+_tree(2, 700, 500),
+_bullets(BulletManager::GetInst()),
+_enemyCount(0)
 {
-    _player = new Player(100, 100, "images/player.png");
+    _player = new Player(320, 240, "images/player.png");
     _manager->Add(_player);
     srand((unsigned)time(NULL));
-    _pressText.SetPosition(300, 200);
+    _pressText.SetPosition(150, 200);
     _pressText.SetText("Press P To Start The Round");
 
     _timerText2.SetPosition(2.f,10.f);
@@ -38,6 +41,8 @@ _bullets(BulletManager::GetInst())
     _timerText2.SetText("time:");
     _scoreText2.SetText("score:");
     _levelText2.SetText("level:");
+    _music.OpenFromFile("sounds/game_music.ogg");
+
 }
 SwarmState::~SwarmState()
 {
@@ -46,6 +51,7 @@ SwarmState::~SwarmState()
 }
 void SwarmState::Init()
 {
+    _rand.SetSeed((unsigned)time(NULL));
 }
 
 void SwarmState::Cleanup()
@@ -69,6 +75,7 @@ void SwarmState::HandleEvents(GameManager* mgr)
                 StartRound(_currentLevel);
                 state = IN_ROUND;
                 _currentLevel++;
+                _music.Play();
             }
         }
     }
@@ -78,7 +85,7 @@ void SwarmState::SpawnFood(int amnt)
 {
     for(int i =0; i < amnt; i++)
     {
-        _manager->Add(new Food((int)rand() % 600, (int)rand() % 400, 10, "images/food.png"));
+        _manager->Add(new Food(_rand.Random(40, 600), _rand.Random(40, 400), 10, "images/food.png"));
     }
     _scoreGoal = amnt;
 }
@@ -87,14 +94,17 @@ void SwarmState::SpawnWave(int amnt)
 {
     for(int i = 0; i < amnt; i++)
     {
-        _manager->Add(new Entity((int)rand() % 600, (int)rand() % 400, 32, 32, "images/enemy.png"));
+        _manager->Add(new Enemy(_rand.Random(40, 600), _rand.Random(40, 400)));
     }
 }
 
 void SwarmState::StartRound(int level)
 {
-    SpawnWave(2*(level+1)+5);
+
+    SpawnWave(12);
     SpawnFood(10);
+    amount = 12;
+
 
     _timer.Reset();
     _score = 0;
@@ -125,9 +135,13 @@ void SwarmState::UpdateText()
     _timerText.SetText(itoa((int)_timer.GetElapsedTime(), buffer, 10));
 
 }
-
+/// make the scoring about seeing how long you can last the wave.
 void SwarmState::Update(GameManager* mgr)
 {
+    if(_spawnTimer.GetElapsedTime() >= 20.f)
+    {
+        SpawnWave(12);
+    }
     _score = _player->GetScore();
 
     _manager->Update();
@@ -141,11 +155,29 @@ void SwarmState::Update(GameManager* mgr)
         {
             state = OUT_OF_ROUND;
             _manager->Clear();
+            status = FAIL;
+            mgr->PushState(FailState::GetInst());
         }
         else if(_score >= _scoreGoal)
         {
             state = OUT_OF_ROUND;
             _manager->Clear();
+            _music.Pause();
         }
+        else if(_manager->GetVector().size() == 1)
+        {
+            state = OUT_OF_ROUND;
+            _manager->Clear();
+            _music.Pause();
+
+        }
+        else if(_player->Dead())
+        {
+            state = OUT_OF_ROUND;
+            _manager->Clear();
+            status = FAIL;
+            mgr->PushState(FailState::GetInst());
+        }
+        std::cout << _manager->GetVector().size() << std::endl;
     }
 }

@@ -3,18 +3,19 @@
 
 #include "Entity.h"
 #include "EntityManager.h"
-#include <random>
-
+extern int amount;
 class Enemy : public cell::Entity
 {
     public:
         Enemy(int x, int y);
-        virtual ~Enemy();
+        ~Enemy();
+        virtual void OnCollision(cell::Entity* e);
+        virtual void Update();
+        virtual void Render(sf::RenderWindow& window);
 
-        void OnCollision(cell::Entity* e);
-        void Update();
+        void RunAI();
     private:
     sf::Randomizer _rand;
 };
-
+extern void ExportEnemy();
 #endif // ENEMY_H
