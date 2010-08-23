@@ -7,32 +7,32 @@
 	<File name="AI.h" open="0" top="0" tabpos="15">
 		<Cursor position="816" topLine="12" />
 	</File>
-	<File name="Bullet.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="721" topLine="3" />
+	<File name="Bullet.cpp" open="1" top="1" tabpos="6">
+		<Cursor position="439" topLine="8" />
 	</File>
-	<File name="Enemy.cpp" open="1" top="0" tabpos="8">
-		<Cursor position="300" topLine="8" />
+	<File name="Enemy.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="347" topLine="8" />
 	</File>
-	<File name="Enemy.h" open="0" top="0" tabpos="0">
-		<Cursor position="317" topLine="0" />
+	<File name="Enemy.h" open="1" top="0" tabpos="8">
+		<Cursor position="282" topLine="0" />
 	</File>
-	<File name="EntityManager.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="530" topLine="26" />
+	<File name="EntityManager.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="51" topLine="0" />
 	</File>
-	<File name="EntityManager.h" open="0" top="0" tabpos="1">
-		<Cursor position="596" topLine="10" />
+	<File name="EntityManager.h" open="1" top="0" tabpos="10">
+		<Cursor position="682" topLine="22" />
 	</File>
 	<File name="Food.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="223" topLine="5" />
+		<Cursor position="405" topLine="8" />
 	</File>
-	<File name="Food.h" open="0" top="0" tabpos="0">
-		<Cursor position="331" topLine="0" />
+	<File name="Food.h" open="1" top="0" tabpos="14">
+		<Cursor position="335" topLine="0" />
 	</File>
 	<File name="GameManager.cpp" open="0" top="0" tabpos="13">
 		<Cursor position="454" topLine="1" />
 	</File>
 	<File name="GameManager.h" open="0" top="0" tabpos="3">
-		<Cursor position="592" topLine="5" />
+		<Cursor position="567" topLine="5" />
 	</File>
 	<File name="Level.cpp" open="0" top="0" tabpos="11">
 		<Cursor position="3570" topLine="124" />
@@ -40,35 +40,35 @@
 	<File name="Level.h" open="0" top="0" tabpos="10">
 		<Cursor position="1096" topLine="27" />
 	</File>
-	<File name="MenuState.cpp" open="1" top="0" tabpos="3">
+	<File name="MenuState.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="1632" topLine="0" />
 	</File>
-	<File name="MenuState.h" open="1" top="0" tabpos="4">
+	<File name="MenuState.h" open="0" top="0" tabpos="4">
 		<Cursor position="739" topLine="8" />
 	</File>
 	<File name="MyRect.h" open="0" top="0" tabpos="0">
 		<Cursor position="44" topLine="0" />
 	</File>
-	<File name="Player.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="40" topLine="0" />
+	<File name="Player.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="899" topLine="27" />
 	</File>
-	<File name="Player.h" open="0" top="0" tabpos="10">
-		<Cursor position="54" topLine="0" />
+	<File name="Player.h" open="1" top="0" tabpos="12">
+		<Cursor position="174" topLine="6" />
 	</File>
-	<File name="QuadTree.cpp" open="0" top="0" tabpos="3">
-		<Cursor position="2294" topLine="43" />
+	<File name="QuadTree.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="1702" topLine="45" />
 	</File>
-	<File name="QuadTree.h" open="0" top="0" tabpos="5">
+	<File name="QuadTree.h" open="1" top="0" tabpos="13">
 		<Cursor position="1795" topLine="52" />
 	</File>
 	<File name="State.h" open="0" top="0" tabpos="11">
 		<Cursor position="515" topLine="3" />
 	</File>
-	<File name="SwarmState.cpp" open="1" top="1" tabpos="2">
-		<Cursor position="1967" topLine="73" />
+	<File name="SwarmState.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="3350" topLine="127" />
 	</File>
 	<File name="SwarmState.h" open="1" top="0" tabpos="1">
-		<Cursor position="1677" topLine="52" />
+		<Cursor position="2024" topLine="53" />
 	</File>
 	<File name="TestState.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="1574" topLine="9" />
@@ -76,14 +76,14 @@
 	<File name="TestState.h" open="0" top="0" tabpos="9">
 		<Cursor position="789" topLine="16" />
 	</File>
-	<File name="bullet.hpp" open="1" top="0" tabpos="6">
-		<Cursor position="58" topLine="0" />
+	<File name="bullet.hpp" open="0" top="0" tabpos="6">
+		<Cursor position="474" topLine="20" />
 	</File>
-	<File name="bulletmanager.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="364" topLine="0" />
+	<File name="bulletmanager.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="856" topLine="34" />
 	</File>
-	<File name="bulletmanager.hpp" open="0" top="0" tabpos="1">
-		<Cursor position="0" topLine="9" />
+	<File name="bulletmanager.hpp" open="1" top="0" tabpos="11">
+		<Cursor position="416" topLine="6" />
 	</File>
 	<File name="main.cpp" open="0" top="0" tabpos="9">
 		<Cursor position="485" topLine="6" />

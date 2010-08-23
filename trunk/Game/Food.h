@@ -12,7 +12,7 @@ class Food : public cell::Entity
 
         void Render(sf::RenderWindow& window);
 
-        void OnCollision(int t = 0);
+        void OnCollision(cell::Entity* e);
 
         int Heal() { return _healAmnt; }
         void SetHeal(int amnt) { _healAmnt = amnt; }

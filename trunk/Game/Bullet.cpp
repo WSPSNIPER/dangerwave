@@ -19,11 +19,12 @@ void Bullet::Update()
         Kill();
 }
 
-void Bullet::OnCollision(int t)
+void Bullet::OnCollision(cell::Entity* e)
 {
-    if(t != PLAYER)
+    if(e->GetType() != PLAYER){
+        e->Kill();
         Kill();
-
+    }
 }
 
 void Bullet::Render(sf::RenderWindow& window)

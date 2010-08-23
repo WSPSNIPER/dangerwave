@@ -25,7 +25,7 @@ public:
 
    void Move(float x, float y);
 
-   void OnCollision(int t = 0);
+   void OnCollision(cell::Entity*);
 
    void Update();
 

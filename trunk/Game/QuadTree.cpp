@@ -1,6 +1,7 @@
 #include "QuadTree.h"
 #include <fstream>
 #include <iostream>
+#include "bulletmanager.hpp"
 #include "Player.h"
 
 QuadTree::QuadTree(int levels, int width, int height)
@@ -46,14 +47,16 @@ void QuadTree::CheckCollisions()
     {
         for(unsigned int n = 0; n < collisionNodes[i]->entity.size(); n++)
         {
-            for(unsigned int z = 0; z < collisionNodes[i]->entity.size(); z++)
+            if(!collisionNodes[i]->entity[n]->Dead())
             {
-                if(z != n)
+                for(unsigned int z = 0; z < collisionNodes[i]->entity.size(); z++)
                 {
-                    if(collisionNodes[i]->entity[n]->Collision(collisionNodes[i]->entity[z]->GetRect()))
+                    if(z != n && !collisionNodes[i]->entity[z]->Dead())
                     {
-                        int type = collisionNodes[i]->entity[z]->GetType();
-                        collisionNodes[i]->entity[n]->OnCollision(type); // 0 is so it calls the Collision(int)
+                        if(collisionNodes[i]->entity[n]->Collision(collisionNodes[i]->entity[z]->GetRect()))
+                        {
+                            collisionNodes[i]->entity[n]->OnCollision(collisionNodes[i]->entity[z]);
+                        }
                     }
                 }
             }

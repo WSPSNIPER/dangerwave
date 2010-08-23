@@ -2,21 +2,55 @@
 #include "bulletmanager.hpp"
 #include "bullet.hpp"
 
-void BulletManager::Register(Bullet &bullet, float angle, Slope &slope, sf::Vector2f StartPosition)
+BulletManager* BulletManager::_instance = NULL;
+BulletManager* BulletManager::GetInst()
 {
-    bullet.Shot = false;
-    bullet.Angle = angle;
-//    bullet.SetPosition(StartPosition);
-    bullet._Slope = slope;
+    if(!_instance)
+    {
+        _instance = new BulletManager;
+    }
+    return _instance;
 }
 
-void BulletManager::KillBullet(Bullet &bullet)
+
+BulletManager::BulletManager()
 {
-    bullet.Shot = false;
+    _bullet.clear();
 }
 
-void  BulletManager::Move(Bullet &bullet,sf::Vector2f &slope)
+BulletManager::~BulletManager()
 {
-    bullet.Move(slope.x,slope.y);
+    for(size_t i = 0; i < _bullet.size(); i++)
+    {
+        if(_bullet[i])
+            delete _bullet[i];
+    }
+    _bullet.clear();
 }
-//not done yet. still need to work on little indiviual stuff and make the bullet class as easy as it can be.
+
+void BulletManager::Add(Bullet* bullet)
+{
+    _bullet.push_back(bullet);
+}
+
+void BulletManager::Render(sf::RenderWindow& window)
+{
+    for(size_t i = 0; i < _bullet.size(); i++)
+    {
+        _bullet[i]->Render(window);
+    }
+}
+
+void BulletManager::Update()
+{
+    for(size_t i = 0; i < _bullet.size(); i++)
+    {
+        _bullet[i]->Update();
+        if(_bullet[i]->Dead())
+        {
+            delete _bullet[i];
+            _bullet.erase(_bullet.begin()+i);
+            i--;
+        }
+    }
+}

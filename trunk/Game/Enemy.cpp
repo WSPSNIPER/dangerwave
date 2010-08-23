@@ -13,10 +13,13 @@ Enemy::~Enemy()
 {
 }
 
-void Enemy::OnCollision(int t)
+void Enemy::OnCollision(cell::Entity* e)
 {
-    if(t == BULLET)
-        _alive = false;
+    if(e->GetType() == BULLET)
+    {
+        Kill();
+        e->Kill();
+    }
 
 }
 

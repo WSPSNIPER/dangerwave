@@ -4,39 +4,29 @@
 #include "Bullet.hpp"
 
 class BulletManager
-
 {
+    static BulletManager* _instance;
+    BulletManager();
+public:
+    static BulletManager* GetInst();
+    ~BulletManager();
 
-   public:
+    void Add(Bullet* bullet);
 
-   void Register(Bullet &bullet, float angle, Slope &slope, sf::Vector2f StartPosition);
+    void Render(sf::RenderWindow& window);
+    void Update();
 
+    void Kill(int i)
+    {
+        delete _bullet[i];
+        _bullet.erase(_bullet.begin()+i);
+    }
 
+    Bullet* GetBullet(int index) { return _bullet[index]; }
+    std::vector<Bullet*>& GetVector() { return _bullet; }
 
-   bool Collison(sf::Vector2f &coords);
-
-
-
-   void KillBullet(Bullet &bullet);
-
-
-
-   void KillBullet(sf::Vector2f &coord, Bullet &bullet); //change for collision
-
-
-
-   void Move(Bullet &bullet,sf::Vector2f &slope);
-
-
-
-   std::string GetShooter(Bullet &bullet);
-
-
-
-   int GetType(Bullet &bullet);
-
-
-
+private:
+    std::vector<Bullet*> _bullet;
 };
 
 #endif

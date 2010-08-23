@@ -373,7 +373,7 @@
 	"Trig.h"
 	"LuaManager.h"
 
-1282521587 c:\users\user\dangerwave3\game\entity.h
+1282532278 c:\users\user\dangerwave3\game\entity.h
 	"LuaManager.h"
 	<iostream>
 	"ImageManager.h"
@@ -407,13 +407,13 @@
 
 1282287198 c:\users\user\dangerwave3\game\myrect.h
 
-1282529056 source:c:\users\user\dangerwave3\game\bullet.cpp
+1282536416 source:c:\users\user\dangerwave3\game\bullet.cpp
 	"Entity.h"
 	"SFML/System.hpp"
 	"string"
 	"bullet.hpp"
 
-1282445667 c:\users\user\dangerwave3\game\bullet.hpp
+1282532277 c:\users\user\dangerwave3\game\bullet.hpp
 	"Entity.h"
 	"slope.hpp"
 	<string>
@@ -425,7 +425,7 @@
 	"EntityManager.h"
 	"LuaManager.h"
 
-1282524855 c:\users\user\dangerwave3\game\entitymanager.h
+1282535810 c:\users\user\dangerwave3\game\entitymanager.h
 	"Entity.h"
 	<vector>
 
@@ -457,38 +457,40 @@
 	<string>
 	<fstream>
 
-1282525001 c:\users\user\dangerwave3\game\player.h
+1282537318 c:\users\user\dangerwave3\game\player.h
 	"Trig.h"
 	"Entity.h"
 	"Animation.h"
 	<string>
 	"bullet.hpp"
+	"bulletmanager.hpp"
 	"slope.hpp"
 
 1282282467 c:\users\user\dangerwave3\game\animation.h
 	"ImageManager.h"
 	<vector>
 
-1282525001 source:c:\users\user\dangerwave3\game\player.cpp
+1282536638 source:c:\users\user\dangerwave3\game\player.cpp
 	"Player.h"
 	<iostream>
 	"EntityManager.h"
 	"slope.hpp"
 
-1282507792 source:c:\users\user\dangerwave3\game\quadtree.cpp
+1282537062 source:c:\users\user\dangerwave3\game\quadtree.cpp
 	"QuadTree.h"
 	<fstream>
 	<iostream>
+	"bulletmanager.hpp"
 	"Player.h"
 
 1282282467 source:c:\users\user\dangerwave3\game\state.cpp
 	"State.h"
 
-1282530014 source:c:\users\user\dangerwave3\game\swarmstate.cpp
+1282537043 source:c:\users\user\dangerwave3\game\swarmstate.cpp
 	"SwarmState.h"
 	"GameManager.h"
 
-1282526068 c:\users\user\dangerwave3\game\swarmstate.h
+1282534410 c:\users\user\dangerwave3\game\swarmstate.h
 	"State.h"
 	"Player.h"
 	"EntityManager.h"
@@ -499,6 +501,7 @@
 	"Food.h"
 	"Enemy.h"
 	<time.h>
+	"bulletmanager.hpp"
 
 1282413474 source:c:\users\user\dangerwave3\game\teststate.cpp
 	"TestState.h"
@@ -514,11 +517,11 @@
 	"Level.h"
 	<fstream>
 
-1282282468 source:c:\users\user\dangerwave3\game\bulletmanager.cpp
+1282534903 source:c:\users\user\dangerwave3\game\bulletmanager.cpp
 	"bulletmanager.hpp"
 	"bullet.hpp"
 
-1282282467 c:\users\user\dangerwave3\game\bulletmanager.hpp
+1282535810 c:\users\user\dangerwave3\game\bulletmanager.hpp
 	"Bullet.hpp"
 
 1282500586 source:c:\users\user\dangerwave3\game\main.cpp
@@ -557,18 +560,18 @@
 	"EntityManager.h"
 	"GameManager.h"
 
-1282530014 source:c:\users\user\dangerwave3\game\enemy.cpp
+1282532482 source:c:\users\user\dangerwave3\game\enemy.cpp
 	"Enemy.h"
 
-1282527266 c:\users\user\dangerwave3\game\enemy.h
+1282536110 c:\users\user\dangerwave3\game\enemy.h
 	"Entity.h"
 	"EntityManager.h"
 	<random>
 
-1282525947 source:c:\users\user\dangerwave3\game\food.cpp
+1282532563 source:c:\users\user\dangerwave3\game\food.cpp
 	"Food.h"
 
-1282521819 c:\users\user\dangerwave3\game\food.h
+1282532563 c:\users\user\dangerwave3\game\food.h
 	"Entity.h"
 	"EntityManager.h"
 	"ImageManager.h"

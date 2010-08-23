@@ -5,9 +5,10 @@
 #include "Animation.h"
 #include <string>
 #include "bullet.hpp"
+#include "bulletmanager.hpp"
 #include "slope.hpp"
 /// @todo Create a Rect class to take care of Entity Collision
-const float PLAYER_SPEED = 3.f;
+const float PLAYER_SPEED = 5.f;
 class Player : public cell::Entity
 {
     public:
@@ -21,8 +22,7 @@ class Player : public cell::Entity
         virtual void Render(sf::RenderWindow& window);
         void RotateToMouse();
 
-        virtual void OnCollision(int t = 0);
-
+        virtual void OnCollision(cell::Entity* e);
         void Shoot();
 
         int  GetHp() const { return _hp; }
@@ -31,6 +31,7 @@ class Player : public cell::Entity
 
         int GetScore() { return _score; }
         void IncrementScore() {_score++;}
+        void SetScore(int s) { _score = s;}
 
     private:
 

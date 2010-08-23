@@ -35,7 +35,8 @@ namespace cell
             virtual void Update();
 
             virtual void OnCollision(){}
-            virtual void OnCollision(int type){}// add to the enum if you want more or just make a define or somthing
+            virtual void OnCollision(int type){}// add to the enum if you want more or just make a define o
+            virtual void OnCollision(Entity* entity){} // the one i use :)
 
             float GetX() const ;
             float GetY() const ;
