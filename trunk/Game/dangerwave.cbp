@@ -66,8 +66,12 @@
 		<Unit filename="AI.cpp" />
 		<Unit filename="AI.h" />
 		<Unit filename="Bullet.cpp" />
+		<Unit filename="Enemy.cpp" />
+		<Unit filename="Enemy.h" />
 		<Unit filename="EntityManager.cpp" />
 		<Unit filename="EntityManager.h" />
+		<Unit filename="Food.cpp" />
+		<Unit filename="Food.h" />
 		<Unit filename="GameManager.cpp" />
 		<Unit filename="GameManager.h" />
 		<Unit filename="Level.cpp" />
@@ -78,6 +82,7 @@
 		<Unit filename="MenuState.h">
 			<Option virtualFolder="GameStates\" />
 		</Unit>
+		<Unit filename="MyRect.h" />
 		<Unit filename="Player.cpp" />
 		<Unit filename="Player.h" />
 		<Unit filename="QuadTree.cpp" />

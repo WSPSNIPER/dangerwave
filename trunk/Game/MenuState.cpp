@@ -71,26 +71,32 @@ void MenuState::HandleEvents(GameManager* mgr)
             mgr->Close();
         }
     }
-    else if(input.IsKeyDown(sf::Key::Down))
+    if(_timer.GetElapsedTime() >= 0.25f)
     {
-        if(_arrow.GetPosition().y == _startImage.GetPosition().y +OFFSET)
+        if(input.IsKeyDown(sf::Key::Down))
         {
-            _arrow.SetPosition(_quitImage.GetPosition().x - 32, _quitImage.GetPosition().y + OFFSET);
+            if(_arrow.GetPosition().y == _startImage.GetPosition().y +OFFSET)
+            {
+                _arrow.SetPosition(_quitImage.GetPosition().x - 32, _quitImage.GetPosition().y + OFFSET);
+            }
+            else
+            {
+                _arrow.SetPosition(_startImage.GetPosition().x - 32, _startImage.GetPosition().y + OFFSET);
+            }
+            _timer.Reset();
         }
-        else
+        else if(input.IsKeyDown(sf::Key::Up))
         {
-            _arrow.SetPosition(_startImage.GetPosition().x - 32, _startImage.GetPosition().y + OFFSET);
+            if(_arrow.GetPosition().y == _startImage.GetPosition().y+OFFSET)
+            {
+                _arrow.SetPosition(_quitImage.GetPosition().x - 32, _quitImage.GetPosition().y+OFFSET);
+            }
+            else
+            {
+                _arrow.SetPosition(_startImage.GetPosition().x - 32, _startImage.GetPosition().y+OFFSET);
+            }
+            _timer.Reset();
         }
-    }
-    else if(input.IsKeyDown(sf::Key::Up))
-    {
-        if(_arrow.GetPosition().y == _startImage.GetPosition().y+OFFSET)
-        {
-            _arrow.SetPosition(_quitImage.GetPosition().x - 32, _quitImage.GetPosition().y+OFFSET);
-        }
-        else
-        {
-            _arrow.SetPosition(_startImage.GetPosition().x - 32, _startImage.GetPosition().y+OFFSET);
-        }
+
     }
 }
