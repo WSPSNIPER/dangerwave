@@ -27,6 +27,11 @@ class EntityManager
         void Render(sf::RenderWindow& window);
         void Update();
 
+        void Kill(int i)
+        {
+            delete _entity[i];
+            _entity.erase(_entity.begin()+i);
+        }
         /// example use  Add(new Entity()) or Add(new Entity(player)) NOT NOT NOT! Add(&player) NOT THAT
         void Add(cell::Entity* entity); // always add entities like this, new Entity() if you have one do new Entity(entity)
 

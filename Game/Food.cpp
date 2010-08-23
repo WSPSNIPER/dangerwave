@@ -21,9 +21,9 @@ void Food::Render(sf::RenderWindow& window)
     window.Draw(_sprite);
 }
 
-void Food::OnCollision(int t)
+void Food::OnCollision(cell::Entity* e)
 {
-    if(t == PLAYER)
+    if(e->GetType() == PLAYER)
     {
         Kill();
     }

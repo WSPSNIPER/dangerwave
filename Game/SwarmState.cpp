@@ -19,9 +19,11 @@ _player(0),
 _level("maps/island2.map", "images/tiles.png"),
 _manager(EntityManager::GetInst()),
 _images(ImageManager::GetInst()),
-_tree(2, 640, 480)
+_tree(2, 640, 480),
+_bullets(BulletManager::GetInst())
 {
-    _manager->Add(new Player(100, 100, "images/player.png"));
+    _player = new Player(100, 100, "images/player.png");
+    _manager->Add(_player);
     srand((unsigned)time(NULL));
     _pressText.SetPosition(300, 200);
     _pressText.SetText("Press P To Start The Round");
@@ -85,7 +87,7 @@ void SwarmState::SpawnWave(int amnt)
 {
     for(int i = 0; i < amnt; i++)
     {
-        _manager->Add(new Enemy((int)rand() % 600, (int)rand() % 400));
+        _manager->Add(new Entity((int)rand() % 600, (int)rand() % 400, 32, 32, "images/enemy.png"));
     }
 }
 
@@ -95,6 +97,8 @@ void SwarmState::StartRound(int level)
     SpawnFood(10);
 
     _timer.Reset();
+    _score = 0;
+    _player->SetScore(0);
 }
 
 void SwarmState::Render(GameManager* mgr)
@@ -119,10 +123,12 @@ void SwarmState::UpdateText()
     _scoreText.SetText(itoa(_score, buffer, 10));
     _levelText.SetText(itoa(_currentLevel, buffer, 10));
     _timerText.SetText(itoa((int)_timer.GetElapsedTime(), buffer, 10));
+
 }
 
 void SwarmState::Update(GameManager* mgr)
 {
+    _score = _player->GetScore();
 
     _manager->Update();
     UpdateText();

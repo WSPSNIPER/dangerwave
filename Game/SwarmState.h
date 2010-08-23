@@ -11,6 +11,7 @@
 #include "Food.h"
 #include "Enemy.h"
 #include <time.h>
+#include "bulletmanager.hpp"
 using namespace cell;
 
 
@@ -66,6 +67,7 @@ class SwarmState : public State
         Player*         _player;
         Level           _level;
         EntityManager*  _manager;
+        BulletManager*  _bullets;
         ImageManager*   _images;
         QuadTree        _tree;
         /// @TODO finish this state

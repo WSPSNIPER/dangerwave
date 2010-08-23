@@ -7,7 +7,7 @@ using namespace cell;
 const float RATE_OF_FIRE = 0.5f;
 Player::Player(float setX, float setY, std::string setName, std::string script)
 :
-cell::Entity(setX, setY, 80, 120/4, setName),
+cell::Entity(setX, setY, 32, 32, setName),
 _animation(_sprite, 80, 120/4, 4, VERTICAL),
 _script(script)
 {
@@ -75,15 +75,16 @@ void Player::Move(float off_x, float off_y)
     Entity::Move(off_x, off_y);
 }
 
-void Player::OnCollision(int t)
+void Player::OnCollision(cell::Entity* e)
 {
-    if(t == ENEMY)
+    if(e->GetType() == ENEMY)
     {
         _hp -= 10;
     }
-    else if(t == FOOD)
+    else if(e->GetType() == FOOD)
     {
         _score += 1;
+        std::cout << "score up" << std::endl;
     }
 }
 

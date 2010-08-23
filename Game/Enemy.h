@@ -11,7 +11,7 @@ class Enemy : public cell::Entity
         Enemy(int x, int y);
         virtual ~Enemy();
 
-        void OnCollision(int t = 0);
+        void OnCollision(cell::Entity* e);
         void Update();
     private:
     sf::Randomizer _rand;
