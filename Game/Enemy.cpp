@@ -9,8 +9,8 @@ void ExportEntity()
 
 int amount = 0;
 
-Enemy::Enemy(int x, int y):
-cell::Entity(x, y, 32,32, "images/enemy.png")
+Enemy::Enemy(int x, int y, std::string image):
+cell::Entity(x, y, 32,32, image)
 {
     SetPosition(x, y);
     _collisionRect.set(x,y,30,30);

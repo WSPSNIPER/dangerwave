@@ -7,7 +7,7 @@ extern int amount;
 class Enemy : public cell::Entity
 {
     public:
-        Enemy(int x, int y);
+        Enemy(int x, int y, std::string image = "images/enemy.png");
         ~Enemy();
         virtual void OnCollision(cell::Entity* e);
         virtual void Update();
