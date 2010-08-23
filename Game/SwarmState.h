@@ -25,8 +25,8 @@ using namespace cell;
 *** there are ( x ) amount of waves where the number of enemies increases by ( n )
 *** each wave and may get stronger
 **************************************************************************************************/
-#define MAX_LEVELS 10
-#define TIME_LIMIT 120
+#define MAX_LEVELS 100
+#define TIME_LIMIT 10000 // no time limit
 #define IN_ROUND 1
 #define OUT_OF_ROUND 2
 #define PASS 1
@@ -69,7 +69,6 @@ class SwarmState : public State
         Player*         _player;
         Level           _level;
         EntityManager*  _manager;
-        BulletManager*  _bullets;
         ImageManager*   _images;
         QuadTree        _tree;
         int             _enemyCount;

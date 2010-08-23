@@ -3,6 +3,7 @@
 #include "FailState.h"
 int state = OUT_OF_ROUND;
 int status = PASS;
+bool setup = false;
 SwarmState* SwarmState::_instance = NULL;
 
 SwarmState* SwarmState::GetInst()
@@ -22,7 +23,6 @@ _level("maps/island2.map", "images/tiles.png"),
 _manager(EntityManager::GetInst()),
 _images(ImageManager::GetInst()),
 _tree(2, 700, 500),
-_bullets(BulletManager::GetInst()),
 _enemyCount(0)
 {
     _player = new Player(320, 240, "images/player.png");
@@ -113,6 +113,7 @@ void SwarmState::StartRound(int level)
 
 void SwarmState::Render(GameManager* mgr)
 {
+
     _level.Render(*mgr);
     _manager->Render(*mgr);
     mgr->Draw(_scoreText);
@@ -141,6 +142,7 @@ void SwarmState::Update(GameManager* mgr)
     if(_spawnTimer.GetElapsedTime() >= 20.f)
     {
         SpawnWave(12);
+        _spawnTimer.Reset();
     }
     _score = _player->GetScore();
 

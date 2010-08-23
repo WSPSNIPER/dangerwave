@@ -23,6 +23,7 @@ _sounds(cell::SoundManager::GetInst())
     _score = 0;
     _gunSound.SetBuffer(_sounds->GetBuffer("sounds/gun.wav"));
     _gunSound.SetVolume(20.f);
+    _healthBar = sf::Shape::Rectangle(520, 20, 520+_hp, 40, sf::Color(20, 230, 60));
 }
 
 void Player::RotateToMouse()
@@ -82,9 +83,18 @@ void Player::Move(float off_x, float off_y)
 
 void Player::OnCollision(cell::Entity* e)
 {
+
     if(e->GetType() == ENEMY)
     {
-        _hp--;
+        if(_hpTimer.GetElapsedTime() >= 0.07f){
+            _hp--;
+
+            if(_hp > 50)
+                _healthBar = sf::Shape::Rectangle(520, 20, 520+_hp, 40, sf::Color(20, 230, 60));
+            else
+                _healthBar = sf::Shape::Rectangle(520, 20, 520+_hp, 40, sf::Color(230, 20, 60));
+            _hpTimer.Reset();
+        }
     }
     else if(e->GetType() == FOOD)
     {
@@ -110,6 +120,8 @@ void Player::Render(sf::RenderWindow& window)
 {
     HandleInput(window.GetInput());
     _animation.PlayAnimation(window);
+
+    window.Draw(_healthBar);
 }
 
 void ExportPlayer(Player* player)
