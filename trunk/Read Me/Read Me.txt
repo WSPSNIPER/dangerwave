@@ -1,0 +1,5 @@
+this game follows the copyright license of the GNU General Public License v3
+
+which can be found here: http://www.gnu.org/licenses/gpl.html
+
+the "game_music.wav" can be found here with its copyright:  "http://www.newgrounds.com/audio/listen/354434"
